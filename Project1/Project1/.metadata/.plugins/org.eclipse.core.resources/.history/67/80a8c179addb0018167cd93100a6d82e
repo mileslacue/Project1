@@ -1,0 +1,19 @@
+package com.revature.models;
+
+//POJO representing the User roles table
+public class UserRole {
+
+	
+	private int ID;
+	private String status;
+	
+	//Constructors
+	public ReimbursmentType() {}
+	
+	public ReimbursmentType(int id ,String stat) {
+		
+		this.ID= id;
+		this.status = stat;
+	}
+
+}

@@ -1,0 +1,1938 @@
+!SESSION 2018-10-28 20:59:14.489 -----------------------------------------------
+eclipse.buildId=4.0.0.201809220817-RELEASE
+java.version=1.8.0_181
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2018-10-28 20:59:50.694
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-10-28 20:59:50.694
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5fb514c2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3e9b3b3c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-10-28 21:00:02.780
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Luctamar'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-28 21:05:47.009
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-28 21:05:47.021
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.ui 2 2 2018-10-28 21:06:37.053
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.ui.projectPropertyPage (bundle: org.springframework.ide.eclipse.boot.validation, propertyPage: org.springframework.ide.eclipse.boot.validation.preferences.BootValidationProjectPropertyPage)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-28 21:07:26.654
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-28 21:07:26.671
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:07:27.722
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:07:29.671
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.JWnPLUqP
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:07:29.673
+!MESSAGE subscribing to classpath changes: sts4.classpath.JWnPLUqP
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:07:29.675
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:07:29.677
+!MESSAGE subsribers = [sts4.classpath.JWnPLUqP]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:07:29.678
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:07:30.687
+!MESSAGE project ERS ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:07:30.690
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:07:30.691
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.JWnPLUqP => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:07:30.694
+!MESSAGE Preparing classpath changed notification ERS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:07:30.697
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:07:30.706
+!MESSAGE classpath=24 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:07:30.707
+!MESSAGE executing callback sts4.classpath.JWnPLUqP ERS false 24
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:07:30.916
+!MESSAGE executing callback sts4.classpath.JWnPLUqP SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:08:34.156
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/resources[*]: {CONTENT}
+			ResourceDelta(/ERS/src/main/resources/Application.Properties)[*]
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-28 21:08:34.331
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-28 21:08:34.339
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:08:34.622
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CONTENT}
+		ResourceDelta(/ERS/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:09:33.011
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com[+]: {}
+			com.revature[+]: {}
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-28 21:09:33.299
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-28 21:09:33.326
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:09:33.336
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CONTENT}
+		ResourceDelta(/ERS/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:09:33.538
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature[*]: {CHILDREN}
+				[Working copy] ERS_Driver.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-28 21:09:34.425
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-28 21:09:34.428
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:11:23.014
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[+]: {}
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-28 21:11:23.213
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-28 21:11:23.219
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:11:23.230
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CONTENT}
+		ResourceDelta(/ERS/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:11:23.347
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				[Working copy] Employee.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:12:15.429
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				User_Role.java[+]: {}
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-28 21:12:15.594
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-28 21:12:15.601
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:12:15.610
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CONTENT}
+		ResourceDelta(/ERS/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:12:15.662
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				[Working copy] User_Role.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:13:01.618
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				[Working copy] User_Role.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:13:02.934
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				[Working copy] User_Role.java[-]: {MOVED_TO(UserRole.java [in com.revature.models [in src/main/java [in ERS]]])}
+				UserRole.java[+]: {MOVED_FROM([Working copy] User_Role.java [in com.revature.models [in src/main/java [in ERS]]])}
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:13:03.047
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				User_Role.java[-]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:13:03.052
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				[Working copy] UserRole.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-28 21:13:03.491
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-28 21:13:03.501
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:13:03.507
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CONTENT}
+		ResourceDelta(/ERS/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:13:26.830
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				Reimburment.java[+]: {}
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-28 21:13:26.988
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-28 21:13:26.994
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:13:26.999
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CONTENT}
+		ResourceDelta(/ERS/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:13:27.033
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				[Working copy] Reimburment.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:13:53.384
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				[Working copy] Reimburment.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:13:53.405
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				[Working copy] Employee.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:13:53.441
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.revature[*]: {CHILDREN}
+				[Working copy] ERS_Driver.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-28 21:13:53.590
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-28 21:13:53.595
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:13:53.600
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CONTENT}
+		ResourceDelta(/ERS/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:14:56.755
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				ReimbursmentType.java[+]: {}
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-28 21:14:56.932
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-28 21:14:56.939
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:14:56.944
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CONTENT}
+		ResourceDelta(/ERS/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:14:56.957
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				[Working copy] ReimbursmentType.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:15:51.284
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				ReimbursmentStatus.java[+]: {}
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-28 21:15:51.470
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-28 21:15:51.485
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:15:51.489
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CONTENT}
+		ResourceDelta(/ERS/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:15:51.524
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				[Working copy] ReimbursmentStatus.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:17:11.518
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.revature.util[+]: {}
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:17:11.780
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.util[*]: {CHILDREN}
+				[Working copy] ConnectionFactory.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-28 21:17:11.797
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-28 21:17:11.803
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:17:11.810
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CONTENT}
+		ResourceDelta(/ERS/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:18:37.934
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/resources[*]: {CONTENT}
+			ResourceDelta(/ERS/src/main/resources/Application.Properties)[*]
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:18:38.050
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.revature.util[*]: {CHILDREN}
+				[Working copy] ConnectionFactory.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:18:38.069
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				[Working copy] ReimbursmentStatus.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:18:38.084
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				[Working copy] ReimbursmentType.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:18:38.101
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				[Working copy] Reimburment.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-28 21:18:38.250
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-28 21:18:38.262
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:18:38.267
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CONTENT}
+		ResourceDelta(/ERS/src)[*]
+		ResourceDelta(/ERS/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:18:58.664
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.util[*]: {CHILDREN}
+				[Working copy] ConnectionFactory.java[+]: {}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:18:58.676
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.util[*]: {CHILDREN}
+				[Working copy] ConnectionFactory.java[-]: {}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:19:14.398
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.revature.util[*]: {CHILDREN}
+				[Working copy] ConnectionFactory.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-28 21:19:14.601
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-28 21:19:14.606
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:19:14.611
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CONTENT}
+		ResourceDelta(/ERS/src)[*]
+		ResourceDelta(/ERS/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:20:03.776
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.revature.dao[+]: {}
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-28 21:20:03.902
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-28 21:20:03.912
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:20:03.917
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CONTENT}
+		ResourceDelta(/ERS/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:21:09.052
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.revature.dao[*]: {CHILDREN}
+				EmployeeDAOImpl.java[+]: {}
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-28 21:21:09.207
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-28 21:21:09.218
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:21:09.224
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CONTENT}
+		ResourceDelta(/ERS/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:21:09.318
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.dao[*]: {CHILDREN}
+				[Working copy] EmployeeDAOImpl.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:21:24.167
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.revature.dao[*]: {CHILDREN}
+				EmployeeDAO.java[+]: {}
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:21:24.355
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.dao[*]: {CHILDREN}
+				[Working copy] EmployeeDAO.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-28 21:21:24.375
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-28 21:21:24.385
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:21:24.389
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CONTENT}
+		ResourceDelta(/ERS/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:23:49.127
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.revature.dao[*]: {CHILDREN}
+				[Working copy] EmployeeDAO.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:23:49.148
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.revature.dao[*]: {CHILDREN}
+				[Working copy] EmployeeDAOImpl.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-28 21:23:49.278
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-28 21:23:49.283
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 21:23:49.286
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CONTENT}
+		ResourceDelta(/ERS/target)[*]]
+
+!ENTRY org.eclipse.equinox.p2.repository 4 1002 2018-10-28 23:04:37.748
+!MESSAGE Communication with repository at http://download.oracle.com/otn_software/oepe/12.2.1.8/oxygen/repository/dependencies/ failed.
+!STACK 0
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.security.ssl.InputRecord.readFully(Unknown Source)
+	at sun.security.ssl.InputRecord.read(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.readRecord(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.readDataRecord(Unknown Source)
+	at sun.security.ssl.AppInputStream.read(Unknown Source)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:161)
+	at org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:82)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:278)
+	at org.apache.http.impl.conn.LoggingSessionInputBuffer.readLine(LoggingSessionInputBuffer.java:123)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:286)
+	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:257)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.receiveResponseHeader(ManagedClientConnectionImpl.java:207)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:684)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:486)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 23:05:08.193
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature[*]: {CHILDREN}
+				ERS_Driver.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 23:05:08.214
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				Employee.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 23:05:08.238
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				UserRole.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 23:05:08.260
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				Reimburment.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 23:05:08.283
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				ReimbursmentType.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 23:05:09.632
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				ReimbursmentStatus.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 23:05:09.699
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.util[*]: {CHILDREN}
+				ConnectionFactory.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 23:05:10.240
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.dao[*]: {CHILDREN}
+				EmployeeDAOImpl.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 23:05:10.293
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.dao[*]: {CHILDREN}
+				EmployeeDAO.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 23:05:10.467
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.JWnPLUqP
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 23:05:10.468
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.JWnPLUqP
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 23:05:10.469
+!MESSAGE subsribers = null
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-28 23:05:10.470
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.JWnPLUqP => OK
+!SESSION 2018-10-29 10:11:20.577 -----------------------------------------------
+eclipse.buildId=4.0.0.201809220817-RELEASE
+java.version=1.8.0_181
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2018-10-29 10:12:19.953
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-10-29 10:12:19.953
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@291cbe70,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6be422da,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 10:13:03.460
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 10:13:08.563
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.kbWvElSs
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 10:13:08.593
+!MESSAGE subscribing to classpath changes: sts4.classpath.kbWvElSs
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 10:13:08.689
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 10:13:08.704
+!MESSAGE subsribers = [sts4.classpath.kbWvElSs]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 10:13:08.706
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 10:13:08.985
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.revature.dao[*]: {CHILDREN}
+				[Working copy] EmployeeDAO.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-10-29 10:13:11.155
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Luctamar'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 10:13:11.171
+!MESSAGE project ERS ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 10:13:11.173
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 10:13:11.174
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.kbWvElSs => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 10:13:11.176
+!MESSAGE Preparing classpath changed notification ERS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 10:13:11.178
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 10:13:11.194
+!MESSAGE classpath=24 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 10:13:11.195
+!MESSAGE executing callback sts4.classpath.kbWvElSs ERS false 24
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 10:13:11.872
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CONTENT}
+		ResourceDelta(/ERS/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 10:13:13.203
+!MESSAGE executing callback sts4.classpath.kbWvElSs FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2018-10-29 10:13:13.204
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:37)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$Subscriptions$2.run(ReusableClasspathListenerHandler.java:179)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-29 10:13:16.438
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-29 10:13:16.512
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 10:13:17.837
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CONTENT}
+		ResourceDelta(/ERS/pom.xml)[*]
+		ResourceDelta(/ERS/target)[*]]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-29 10:13:22.529
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-29 10:13:22.536
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 10:13:22.807
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CONTENT}
+		ResourceDelta(/ERS/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 10:13:24.246
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.revature.util[*]: {CHILDREN}
+				ConnectionFactory.java[*]: {CONTENT | PRIMARY RESOURCE}
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-29 10:13:25.028
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-29 10:13:25.039
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 10:13:25.043
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CONTENT}
+		ResourceDelta(/ERS/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 10:13:57.683
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.util[*]: {CHILDREN}
+				[Working copy] ConnectionFactory.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 10:16:00.519
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				[Working copy] Employee.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 10:16:00.831
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				[Working copy] Employee.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-29 10:16:01.200
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-29 10:16:01.205
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 10:16:01.212
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CONTENT}
+		ResourceDelta(/ERS/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 10:16:01.961
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				ReimbursmentType.java[*]: {CONTENT | PRIMARY RESOURCE}
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 10:16:02.126
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				[Working copy] ReimbursmentType.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 10:16:02.335
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CONTENT}
+		ResourceDelta(/ERS/target)[*]]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-29 10:16:02.452
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-29 10:16:02.459
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 10:16:02.463
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CONTENT}
+		ResourceDelta(/ERS/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 10:16:03.333
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				[Working copy] ReimbursmentStatus.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 10:16:03.385
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				[Working copy] ReimbursmentStatus.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-29 10:16:03.726
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-29 10:16:03.732
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 10:16:03.736
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CONTENT}
+		ResourceDelta(/ERS/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 10:16:05.194
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				[Working copy] Reimburment.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 10:16:05.312
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				[Working copy] Reimburment.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-29 10:16:05.827
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-29 10:16:05.832
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 10:16:05.835
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CONTENT}
+		ResourceDelta(/ERS/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 10:43:19.200
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.revature[*]: {CHILDREN}
+				ERS_Driver.java[*]: {CONTENT | PRIMARY RESOURCE}
+			com.revature.dao[*]: {CHILDREN}
+				EmployeeDAOImpl.java[*]: {CONTENT | PRIMARY RESOURCE}
+			com.revature.models[*]: {CHILDREN}
+				UserRole.java[*]: {CONTENT | PRIMARY RESOURCE}
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-29 10:43:20.300
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-29 10:43:20.306
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 10:43:21.123
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CONTENT}
+		ResourceDelta(/ERS/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 10:53:44.340
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CONTENT}
+		ResourceDelta(/ERS/pom.xml)[*]]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-29 10:54:01.462
+!MESSAGE The POM for com.oracle:ojdbc7:jar:11.2.0 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-29 10:54:04.916
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-29 10:54:04.947
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 10:54:05.373
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | RESOLVED CLASSPATH CHANGED}
+		C:\Users\Luctamar\.m2\repository\com\oracle\ojdbc7\11.2.0\ojdbc7-11.2.0.jar[+]: {}
+		C:\Users\Luctamar\.m2\repository\junit\junit\4.12\junit-4.12.jar[+]: {}
+		C:\Users\Luctamar\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar[+]: {}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 10:54:05.376
+!MESSAGE Preparing classpath changed notification ERS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 10:54:05.405
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 10:54:05.410
+!MESSAGE classpath=27 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 10:54:05.412
+!MESSAGE executing callback sts4.classpath.kbWvElSs ERS false 27
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 10:54:07.035
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CONTENT}
+		ResourceDelta(/ERS/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 10:54:07.442
+!MESSAGE executing callback sts4.classpath.kbWvElSs FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2018-10-29 10:54:07.443
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:37)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$Subscriptions$2.run(ReusableClasspathListenerHandler.java:179)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 10:54:10.322
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CONTENT}
+		ResourceDelta(/ERS/target)[*]]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-29 10:54:12.600
+!MESSAGE The POM for com.oracle:ojdbc7:jar:11.2.0 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-29 10:54:12.619
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-29 10:54:12.985
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 10:54:13.011
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CONTENT}
+		ResourceDelta(/ERS/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 14:43:11.094
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature[*]: {CHILDREN}
+				[Working copy] ERS_Driver.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.eclipse.lsp4e 4 0 2018-10-29 14:43:27.493
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.operations.hover.LSBasedHover.getHoverInfo(LSBasedHover.java:168)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo(SpringBootJavaHoverProvider.java:35)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:173)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 14:54:38.440
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				[Working copy] ReimbursmentType.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 14:54:38.555
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				[Working copy] ReimbursmentStatus.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 14:54:38.572
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				[Working copy] Employee.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-29 14:54:39.640
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-29 14:54:39.682
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 14:54:39.760
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CONTENT}
+		ResourceDelta(/ERS/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 14:54:44.920
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				[Working copy] UserRole.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.eclipse.lsp4e 4 0 2018-10-29 15:00:07.148
+!MESSAGE 
+!STACK 0
+java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.operations.hover.LSBasedHover.getHoverInfo(LSBasedHover.java:168)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo(SpringBootJavaHoverProvider.java:35)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:173)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 15:01:54.347
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				[Working copy] ReimbursmentStatus.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-29 15:01:54.509
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-29 15:01:54.514
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 15:01:54.517
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CONTENT}
+		ResourceDelta(/ERS/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 15:01:54.646
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				ReimbursmentStatus.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 15:01:56.406
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				[Working copy] ReimbursmentType.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 15:01:56.426
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				[Working copy] UserRole.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-29 15:01:56.665
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-29 15:01:56.669
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 15:01:56.672
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CONTENT}
+		ResourceDelta(/ERS/src)[*]
+		ResourceDelta(/ERS/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 15:02:03.077
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				ReimbursmentType.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 15:04:35.393
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				[Working copy] UserRole.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-29 15:04:35.587
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-29 15:04:35.593
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 15:04:35.597
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CONTENT}
+		ResourceDelta(/ERS/src)[*]
+		ResourceDelta(/ERS/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 15:04:42.099
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				UserRole.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 15:04:52.338
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.util[*]: {CHILDREN}
+				ConnectionFactory.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 15:05:02.405
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.dao[*]: {CHILDREN}
+				[Working copy] EmployeeDAOImpl.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 15:05:04.261
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.dao[*]: {CHILDREN}
+				EmployeeDAOImpl.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 15:05:05.387
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.dao[*]: {CHILDREN}
+				EmployeeDAO.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 15:05:08.748
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature[*]: {CHILDREN}
+				ERS_Driver.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 15:11:20.537
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				[Working copy] Employee.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-29 15:11:20.723
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-29 15:11:20.728
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 15:11:20.731
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CONTENT}
+		ResourceDelta(/ERS/src)[*]
+		ResourceDelta(/ERS/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 15:24:02.653
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				[Working copy] Employee.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-29 15:24:02.839
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-29 15:24:02.844
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 15:24:02.848
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CONTENT}
+		ResourceDelta(/ERS/src)[*]
+		ResourceDelta(/ERS/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 15:24:04.625
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				Employee.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.eclipse.ui 2 2 2018-10-29 16:23:13.050
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.ui.projectPropertyPage (bundle: org.springframework.ide.eclipse.boot.validation, propertyPage: org.springframework.ide.eclipse.boot.validation.preferences.BootValidationProjectPropertyPage)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 16:23:36.546
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				[Working copy] Reimburment.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 16:23:39.061
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				[Working copy] Reimburment.java[-]: {MOVED_TO(Reimbursment.java [in com.revature.models [in src/main/java [in ERS]]])}
+				Reimbursment.java[+]: {MOVED_FROM([Working copy] Reimburment.java [in com.revature.models [in src/main/java [in ERS]]])}
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 16:23:39.162
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				Reimburment.java[-]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 16:23:39.167
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				[Working copy] Reimbursment.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-29 16:23:39.717
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-29 16:23:39.721
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 16:23:39.726
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CONTENT}
+		ResourceDelta(/ERS/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 16:37:35.238
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				[Working copy] Reimbursment.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-29 16:37:35.429
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-29 16:37:35.433
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 16:37:35.438
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CONTENT}
+		ResourceDelta(/ERS/src)[*]
+		ResourceDelta(/ERS/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 16:37:46.347
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				[Working copy] Employee.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 16:37:48.077
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				[Working copy] ReimbursmentStatus.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 16:37:50.817
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				[Working copy] ReimbursmentType.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 16:37:51.849
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				[Working copy] UserRole.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 16:44:43.514
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				[Working copy] Reimbursment.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-29 16:44:43.645
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-29 16:44:43.648
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 16:44:43.652
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CONTENT}
+		ResourceDelta(/ERS/src)[*]
+		ResourceDelta(/ERS/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 20:26:07.224
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				[Working copy] Reimbursment.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-29 20:26:07.364
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-29 20:26:07.364
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 20:26:07.380
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CONTENT}
+		ResourceDelta(/ERS/src)[*]
+		ResourceDelta(/ERS/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 20:29:39.728
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				[Working copy] Reimbursment.java[+]: {}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 20:29:39.744
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				[Working copy] Reimbursment.java[-]: {}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 20:30:03.668
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				[Working copy] Reimbursment.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-29 20:30:03.809
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-29 20:30:03.871
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 20:30:03.871
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CONTENT}
+		ResourceDelta(/ERS/src)[*]
+		ResourceDelta(/ERS/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 20:30:28.561
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				[Working copy] Reimbursment.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-29 20:30:28.686
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-29 20:30:28.686
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 20:30:28.686
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CONTENT}
+		ResourceDelta(/ERS/src)[*]
+		ResourceDelta(/ERS/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 20:31:09.111
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				[Working copy] Reimbursment.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-29 20:31:09.236
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-29 20:31:09.252
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 20:31:09.252
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CONTENT}
+		ResourceDelta(/ERS/src)[*]
+		ResourceDelta(/ERS/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 20:31:14.627
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				Reimbursment.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 20:31:18.191
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				Employee.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 20:31:19.691
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				ReimbursmentStatus.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 20:31:21.410
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				ReimbursmentType.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 20:31:23.223
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				UserRole.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 20:31:34.537
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.kbWvElSs
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 20:31:34.537
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.kbWvElSs
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 20:31:34.537
+!MESSAGE subsribers = null
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-29 20:31:34.537
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.kbWvElSs => OK
+!SESSION 2018-10-30 12:28:56.933 -----------------------------------------------
+eclipse.buildId=4.0.0.201809220817-RELEASE
+java.version=1.8.0_181
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2018-10-30 12:30:18.642
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-10-30 12:30:18.642
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3494a35e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@352ce817,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-30 12:30:43.622
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-10-30 12:30:48.644
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Luctamar'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.lsp4e 4 0 2018-10-30 12:30:55.399
+!MESSAGE LanguageServer not initialized after 10s
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.LanguageServerWrapper.getServerCapabilities(LanguageServerWrapper.java:563)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSWrappers(LanguageServiceAccessor.java:301)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSPDocumentInfosFor(LanguageServiceAccessor.java:444)
+	at org.eclipse.lsp4e.operations.codelens.CodeLensProvider.lambda$0(CodeLensProvider.java:35)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+
+!ENTRY org.eclipse.lsp4e 4 0 2018-10-30 12:30:55.508
+!MESSAGE LanguageServer not initialized after 10s
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.LanguageServerWrapper.getServerCapabilities(LanguageServerWrapper.java:563)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSWrappers(LanguageServiceAccessor.java:301)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSPDocumentInfosFor(LanguageServiceAccessor.java:444)
+	at org.eclipse.lsp4e.operations.color.DocumentColorProvider.lambda$0(DocumentColorProvider.java:53)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+
+!ENTRY org.eclipse.lsp4e 4 0 2018-10-30 12:30:55.879
+!MESSAGE LanguageServer not initialized after 10s
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.LanguageServerWrapper.getServerCapabilities(LanguageServerWrapper.java:563)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.lambda$8(LanguageServiceAccessor.java:372)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.HashMap$KeySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.collect(Unknown Source)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getMatchingStartedWrappers(LanguageServiceAccessor.java:374)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSWrappers(LanguageServiceAccessor.java:284)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSPDocumentInfosFor(LanguageServiceAccessor.java:444)
+	at org.eclipse.lsp4e.operations.folding.LSPFoldingReconcilingStrategy.reconcile(LSPFoldingReconcilingStrategy.java:123)
+	at org.eclipse.lsp4e.operations.folding.LSPFoldingReconcilingStrategy.initialReconcile(LSPFoldingReconcilingStrategy.java:336)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.initialProcess(MonoReconciler.java:98)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:177)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-30 12:31:00.195
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.vPYnspnI
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-30 12:31:00.245
+!MESSAGE subscribing to classpath changes: sts4.classpath.vPYnspnI
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-30 12:31:00.248
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-30 12:31:00.249
+!MESSAGE subsribers = [sts4.classpath.vPYnspnI]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-30 12:31:00.251
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-30 12:31:00.256
+!MESSAGE project ERS ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-30 12:31:00.259
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-30 12:31:00.261
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.vPYnspnI => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-30 12:31:00.269
+!MESSAGE Preparing classpath changed notification ERS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-30 12:31:00.272
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-30 12:31:08.082
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT | RESOLVED CLASSPATH CHANGED}
+		C:\Users\Luctamar\.m2\repository\junit\junit\4.12\junit-4.12.jar[*]: {REORDERED}
+		C:\Users\Luctamar\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar[*]: {REORDERED}
+		C:\Program Files\Java\jre1.8.0_181\lib\resources.jar[*]: {ADDED TO CLASSPATH}
+		C:\Program Files\Java\jre1.8.0_181\lib\rt.jar[*]: {ADDED TO CLASSPATH}
+		C:\Program Files\Java\jre1.8.0_181\lib\jsse.jar[*]: {ADDED TO CLASSPATH}
+		C:\Program Files\Java\jre1.8.0_181\lib\jce.jar[*]: {ADDED TO CLASSPATH}
+		C:\Program Files\Java\jre1.8.0_181\lib\charsets.jar[*]: {ADDED TO CLASSPATH}
+		C:\Program Files\Java\jre1.8.0_181\lib\jfr.jar[*]: {ADDED TO CLASSPATH}
+		C:\Program Files\Java\jre1.8.0_181\lib\ext\access-bridge-64.jar[*]: {ADDED TO CLASSPATH}
+		C:\Program Files\Java\jre1.8.0_181\lib\ext\cldrdata.jar[*]: {ADDED TO CLASSPATH}
+		C:\Program Files\Java\jre1.8.0_181\lib\ext\dnsns.jar[*]: {ADDED TO CLASSPATH}
+		C:\Program Files\Java\jre1.8.0_181\lib\ext\jaccess.jar[*]: {ADDED TO CLASSPATH}
+		C:\Program Files\Java\jre1.8.0_181\lib\ext\jfxrt.jar[*]: {ADDED TO CLASSPATH}
+		C:\Program Files\Java\jre1.8.0_181\lib\ext\localedata.jar[*]: {ADDED TO CLASSPATH}
+		C:\Program Files\Java\jre1.8.0_181\lib\ext\nashorn.jar[*]: {ADDED TO CLASSPATH}
+		C:\Program Files\Java\jre1.8.0_181\lib\ext\sunec.jar[*]: {ADDED TO CLASSPATH}
+		C:\Program Files\Java\jre1.8.0_181\lib\ext\sunjce_provider.jar[*]: {ADDED TO CLASSPATH}
+		C:\Program Files\Java\jre1.8.0_181\lib\ext\sunmscapi.jar[*]: {ADDED TO CLASSPATH}
+		C:\Program Files\Java\jre1.8.0_181\lib\ext\sunpkcs11.jar[*]: {ADDED TO CLASSPATH}
+		C:\Program Files\Java\jre1.8.0_181\lib\ext\zipfs.jar[*]: {ADDED TO CLASSPATH}
+		ResourceDelta(/ERS/.classpath)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-30 12:31:08.148
+!MESSAGE classpath=27 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-30 12:31:08.150
+!MESSAGE executing callback sts4.classpath.vPYnspnI ERS false 27
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-30 12:31:08.155
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		C:\Users\Luctamar\.m2\repository\com\oracle\ojdbc7\11.2.0\ojdbc7-11.2.0.jar[-]: {}
+		C:\Users\Luctamar\.m2\repository\junit\junit\4.12\junit-4.12.jar[-]: {}
+		C:\Users\Luctamar\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar[-]: {}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-30 12:31:08.284
+!MESSAGE executing callback sts4.classpath.vPYnspnI SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-30 12:31:08.285
+!MESSAGE Preparing classpath changed notification ERS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-30 12:31:08.288
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-30 12:31:08.293
+!MESSAGE classpath=27 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-30 12:31:08.294
+!MESSAGE executing callback sts4.classpath.vPYnspnI ERS false 27
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-30 12:31:08.304
+!MESSAGE executing callback sts4.classpath.vPYnspnI SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-30 12:31:10.665
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CONTENT}
+		ResourceDelta(/ERS/.settings)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-30 12:31:41.774
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CONTENT}
+		ResourceDelta(/ERS/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-30 12:31:42.003
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CONTENT}
+		ResourceDelta(/ERS/pom.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-30 12:31:45.555
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT | RESOLVED CLASSPATH CHANGED}
+		C:\Users\Luctamar\.m2\repository\junit\junit\4.12\junit-4.12.jar[+]: {}
+		C:\Users\Luctamar\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar[+]: {}
+		C:\Users\Luctamar\.m2\repository\javax\servlet\javax.servlet-api\4.0.1\javax.servlet-api-4.0.1.jar[+]: {}
+		ResourceDelta(/ERS/pom.xml)[*]
+		ResourceDelta(/ERS/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-30 12:31:45.557
+!MESSAGE Preparing classpath changed notification ERS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-30 12:31:45.559
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-30 12:31:45.563
+!MESSAGE classpath=28 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-30 12:31:45.564
+!MESSAGE executing callback sts4.classpath.vPYnspnI ERS false 28
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-30 12:31:45.583
+!MESSAGE executing callback sts4.classpath.vPYnspnI SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-30 12:31:55.813
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | RESOLVED CLASSPATH CHANGED}
+		C:\Users\Luctamar\.m2\repository\junit\junit\4.12\junit-4.12.jar[*]: {SOURCE ATTACHED}
+		C:\Users\Luctamar\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar[*]: {SOURCE ATTACHED}
+		C:\Users\Luctamar\.m2\repository\javax\servlet\javax.servlet-api\4.0.1\javax.servlet-api-4.0.1.jar[*]: {SOURCE ATTACHED}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-30 12:31:55.816
+!MESSAGE Preparing classpath changed notification ERS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-30 12:31:55.817
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-30 12:31:55.822
+!MESSAGE classpath=28 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-30 12:31:55.823
+!MESSAGE executing callback sts4.classpath.vPYnspnI ERS false 28
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-30 12:31:55.831
+!MESSAGE executing callback sts4.classpath.vPYnspnI SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-30 13:23:13.741
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CONTENT}
+		ResourceDelta(/ERS/pom.xml)[*]]
+
+!ENTRY org.eclipse.ui 2 2 2018-10-30 13:23:17.638
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.ui.projectPropertyPage (bundle: org.springframework.ide.eclipse.boot.validation, propertyPage: org.springframework.ide.eclipse.boot.validation.preferences.BootValidationProjectPropertyPage)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-30 13:23:23.391
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CONTENT}
+		ResourceDelta(/ERS/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-30 13:23:54.199
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN | CONTENT}
+			com[*]: {CONTENT}
+			com.revature[*]: {CHILDREN | CONTENT}
+				ERS_Driver.java[*]: {CONTENT | PRIMARY RESOURCE}
+			com.revature.dao[*]: {CHILDREN | CONTENT}
+				EmployeeDAO.java[*]: {CONTENT | PRIMARY RESOURCE}
+				EmployeeDAOImpl.java[*]: {CONTENT | PRIMARY RESOURCE}
+				ReimbursementDAO.java[+]: {}
+				ReimbursementDAOImpl.java[+]: {}
+			com.revature.models[*]: {CHILDREN | CONTENT}
+				Employee.java[*]: {CONTENT | PRIMARY RESOURCE}
+				Reimbursement.java[+]: {}
+				ReimbursementStatus.java[+]: {}
+				ReimbursementType.java[+]: {}
+				Reimbursment.java[-]: {}
+				ReimbursmentStatus.java[-]: {}
+				ReimbursmentType.java[-]: {}
+				UserRole.java[*]: {CONTENT | PRIMARY RESOURCE}
+			com.revature.util[*]: {CHILDREN | CONTENT}
+				ConnectionFactory.java[*]: {CONTENT | PRIMARY RESOURCE}
+		src/main/resources[*]: {CONTENT}
+			ResourceDelta(/ERS/src/main/resources/Application.Properties)[*]
+		src/test/java[*]: {CONTENT}
+		src/test/resources[*]: {CONTENT}
+		ResourceDelta(/ERS/.classpath)[*]
+		ResourceDelta(/ERS/.project)[*]
+		ResourceDelta(/ERS/.settings)[*]
+		ResourceDelta(/ERS/pom.xml)[*]
+		ResourceDelta(/ERS/src)[*]
+		ResourceDelta(/ERS/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-30 13:23:55.128
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CONTENT}
+		ResourceDelta(/ERS/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-30 13:23:55.575
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CONTENT}
+		ResourceDelta(/ERS/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-30 18:09:35.931
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.dao[*]: {CHILDREN}
+				[Working copy] ReimbursementDAO.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-30 18:10:42.859
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.dao[*]: {CHILDREN}
+				[Working copy] ReimbursementDAOImpl.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-30 18:15:22.013
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.dao[*]: {CHILDREN}
+				[Working copy] ReimbursementDAOImpl.java[+]: {}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-30 18:15:22.049
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.dao[*]: {CHILDREN}
+				[Working copy] ReimbursementDAOImpl.java[-]: {}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-30 18:15:44.564
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.util[*]: {CHILDREN}
+				[Working copy] ConnectionFactory.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-30 18:15:50.614
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.dao[*]: {CHILDREN}
+				[Working copy] ReimbursementDAOImpl.java[+]: {}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-30 18:15:50.626
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.dao[*]: {CHILDREN}
+				[Working copy] ReimbursementDAOImpl.java[-]: {}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-30 18:27:06.305
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				[Working copy] Reimbursement.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-30 18:27:08.264
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				[Working copy] Employee.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-30 18:29:15.535
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.dao[*]: {CHILDREN}
+				[Working copy] ReimbursementDAOImpl.java[+]: {}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-30 18:29:15.547
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.dao[*]: {CHILDREN}
+				[Working copy] ReimbursementDAOImpl.java[-]: {}]
+
+!ENTRY org.eclipse.help.base 2 0 2018-10-30 18:35:33.090
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.jst.ws.consumption.ui.doc.user_1.0.700.v201802222200 [617]'. The index should be rebuilt with Lucene 7.0.0
+
+!ENTRY org.eclipse.help.base 2 0 2018-10-30 18:35:33.120
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.wst.command.env.doc.user_1.5.400.v201802222200 [631]'. The index should be rebuilt with Lucene 7.0.0
+
+!ENTRY org.eclipse.help.base 2 0 2018-10-30 18:35:33.166
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.jst.j2ee.doc.user_1.1.400.v201008122207 [574]'. The index should be rebuilt with Lucene 7.0.0
+
+!ENTRY org.eclipse.help.base 2 0 2018-10-30 18:35:33.175
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.jst.ws.doc.user_1.0.700.v201802222200 [620]'. The index should be rebuilt with Lucene 7.0.0
+
+!ENTRY org.eclipse.help.base 2 0 2018-10-30 18:35:33.184
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.wst.wsi.ui.doc.user_1.0.750.v201802222200 [653]'. The index should be rebuilt with Lucene 7.0.0
+
+!ENTRY org.eclipse.help.base 2 0 2018-10-30 18:35:33.192
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.jst.ejb.doc.user_1.1.301.v201802082131 [569]'. The index should be rebuilt with Lucene 7.0.0
+
+!ENTRY org.eclipse.help.base 2 0 2018-10-30 18:35:33.200
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.jst.ws.axis.ui.doc.user_1.1.200.v201802222200 [613]'. The index should be rebuilt with Lucene 7.0.0
+
+!ENTRY org.eclipse.help.base 2 0 2018-10-30 18:35:33.210
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.wst.wsdl.ui.doc.user_1.0.850.v201802222200 [649]'. The index should be rebuilt with Lucene 7.0.0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-30 19:27:11.520
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.revature.dao[*]: {CHILDREN}
+				[Working copy] ReimbursementDAOImpl.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-30 19:27:12.464
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.revature.models[*]: {CHILDREN}
+				[Working copy] Reimbursement.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-30 19:27:12.546
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.revature.dao[*]: {CHILDREN}
+				[Working copy] ReimbursementDAO.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/ERS/src)[*]]

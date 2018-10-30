@@ -1,0 +1,20 @@
+package com.revature.models;
+
+//POJO Representing the employee table
+public class Employee {
+
+	private int employeeID;
+	private String username;
+	private String pass;
+	private String First_Name;
+	private String Last_Name;
+	private int userRoleID;
+	
+	public Employee(int empID, String UN, String pw, String, String, int ) {
+		
+	}
+	
+	public Employee() {
+		
+	}
+}
