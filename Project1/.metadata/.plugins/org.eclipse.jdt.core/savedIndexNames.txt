@@ -1,5 +1,0 @@
-INDEX VERSION 1.131+C:\Users\Luctamar\git Repository\1810-Oct08-Java-USF\Jeffly_Luctamar_Code\Springtools projects\Week 3\Project1\.metadata\.plugins\org.eclipse.jdt.core
-3830487564.index
-2887851957.index
-1673650595.index
-2301944148.index
