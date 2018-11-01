@@ -1,0 +1,26 @@
+package com.revature.dao;
+
+import java.util.ArrayList;
+
+import com.revature.models.Reimbursement;
+
+public interface ReimbursementDAO {
+
+	
+
+	//creates a new reimbursement record 
+	public void createReimbursement(double amount, int author, int type, String description);
+	
+	public void updateReimbursement(int id, int status);
+		//Validation: check to to see if id exists
+	
+	
+	public ArrayList<Reimbursement> mngGetAll();
+	//
+	
+	public ArrayList<Reimbursement>  mngGetAccept();
+	public ArrayList<Reimbursement>  mngGetDecline();
+	public ArrayList<Reimbursement> mngGetPending();
+
+	
+}

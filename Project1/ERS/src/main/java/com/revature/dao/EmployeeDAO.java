@@ -2,10 +2,12 @@ package com.revature.dao;
 
 import com.revature.models.Employee;
 
-//Interface containing all (unimplemented) methods that will be used to access/manipulate 
-//information relating to the employee table
+// Interface containing all (unimplemented) methods that will be used to access/manipulate employee table
+// {CRUD(Create.Read.Update.Delete) methods}
 public interface EmployeeDAO {
 
-	//create employee object to represent the user upon logging in
-	public Employee createEmployee(String username, String password);
+	//create employee OBJECT(not table record) to represent the user upon logging in
+	public Employee getEmployee(int author);//constructs an employee object based on their UserID
+	public Employee getEmployee(String username, String password);//constructs an employee object based on client-side login credentials
+	
 }
