@@ -5,6 +5,7 @@ public class Employee {
 
 	private int employeeID;
 	private String username;
+	private String email;
 	private String pass;
 	private String First_Name;
 	private String Last_Name;
@@ -14,13 +15,14 @@ public class Employee {
 	//Constructors
 	public Employee() {}
 	
-	public Employee(int empID, String userN, String passw, String fn, String ln, int roleID ) {
+	public Employee(int empID, String userN, String passw, String fn, String ln, int roleID, String email ) {
 		
 		this.employeeID = empID;
 		this.username = userN;
 		this.username = passw;
 		this.First_Name = fn;
 		this.Last_Name = ln;
+		this.email = email;
 		this.userRoleID = roleID;
 		
 	}
@@ -33,6 +35,16 @@ public class Employee {
 		this.First_Name = fn;
 		this.Last_Name = ln;
 	
+	}
+	
+	public Employee(Employee originalUser) {
+		super();
+		this.username = originalUser.username;
+		this.email = originalUser.email;
+		this.pass = originalUser.pass;
+		this.First_Name = originalUser.First_Name;
+		this.Last_Name = originalUser.Last_Name;
+		this.userRoleID = originalUser.userRoleID;
 	}
 	
 	//GETTERS AND SETTERS
@@ -139,10 +151,20 @@ public class Employee {
 		return "Employee [employeeID=" + employeeID + ", username=" + username + ", pass=" + pass + ", First_Name="
 				+ First_Name + ", Last_Name=" + Last_Name + ", userRoleID=" + userRoleID + "]";
 	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
 	
 	
 	
-	
+	public static Employee duplicate(Employee originalUser) {
+		return new Employee(originalUser);
+	}
 	
 	
 	
