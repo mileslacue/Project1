@@ -31,7 +31,7 @@ public class ReimbursementServlet extends HttpServlet{
 		EmployeeServices employeeService = new EmployeeServices();
 		List<Reimbursement> reimburseRecords = new ArrayList<>();
 		
-	
+		
 		//map the Stringified JSON to an array 
 		ObjectMapper mapper = new ObjectMapper();
 		String[] userFields= mapper.readValue(request.getInputStream(), String[].class);
@@ -85,19 +85,49 @@ public class ReimbursementServlet extends HttpServlet{
 	
 	//creation of new reimbursement records
 	protected void doPut(HttpServletRequest request, HttpServletResponse resposnse) throws ServletException, IOException{
-		
+
 		// create appropriate service objects
 		ReimbursementService reimburseService = new ReimbursementService();
 		EmployeeServices employeeService = new EmployeeServices();
 
+	
 		// map incoming JSON information to an array
-		// map the Stringified JSON to an array
-		ObjectMapper mapper = new ObjectMapper();
+		ObjectMapper mapper = new ObjectMapper();		
 		String[] userFields = mapper.readValue(request.getInputStream(), String[].class);
+		
+		//extract relevant information
+		Double amount = Double.parseDouble(userFields[0]);		
+		int userID = Integer.parseInt(userFields[1]);
+		int reimbType = Integer.parseInt(userFields[2]);
+		String description = userFields[3];
+		
+		Employee user = Employee.duplicate(employeeService.getEmployee(userID));
+
+		//creates reimbursement record and inserts it into the table	
+		reimburseService.createReimbursement(amount, userID, reimbType, description);
+
+
 	}
 
 	//updating of reimbursement records(manager exclusive)
 	protected void doPatch(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
 		
+		if (request.getMethod().equalsIgnoreCase("PATCH")) {
+		
+		System.out.println("CHeck");
+		// create appropriate service objects
+		ReimbursementService reimburseService = new ReimbursementService();
+		EmployeeServices employeeService = new EmployeeServices();
+
+		// map incoming JSON information to an array
+		ObjectMapper mapper = new ObjectMapper();
+		String[] userFields = mapper.readValue(request.getInputStream(), String[].class);
+		int userID = Integer.parseInt(userFields[0]);
+		int reimbID = Integer.parseInt(userFields[1]);
+		int status = Integer.parseInt(userFields[2]);
+		Employee manager = Employee.duplicate(employeeService.getEmployee(userID));
+		
+		reimburseService.updateReimbursement(manager, reimbID, status);
+		}
 	}
 }

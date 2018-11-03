@@ -21,13 +21,14 @@ public class ReimbursementService {
 	
 	public void updateReimbursement(Employee mng, int reimbID, int status) {
 		
-		//Condition: User must be a manager; record must exist
+		reimbDAO.updateReimbursement(reimbID, status);
+/*		//Condition: User must be a manager; record must exist
 		if((mng.getUserRoleID() == 2) && (reimbDAO.checkSingleRecord(reimbID))){		
 			reimbDAO.updateReimbursement(reimbID, status);
 			System.out.println("Update Successfull");
 		}else {
 			System.out.println("Update Unsuccessful,");
-		}
+		}*/
 	}
 	
 	
