@@ -15,7 +15,7 @@ import com.revature.util.ConnectionFactory;
 
 public class ReimbursementDAOImpl implements ReimbursementDAO {
 
-
+	@Override
 	public void createReimbursement(double amount, String description, int type, int author ) {
 			
 		//establish a connection to the database (auto commit:off)
@@ -49,6 +49,7 @@ public class ReimbursementDAOImpl implements ReimbursementDAO {
 		
 	}
 
+	@Override
 	public void updateReimbursement(int id, int status) {
 		//Financial manager will be able to update the reimbursement table status column
 		
@@ -115,9 +116,52 @@ public class ReimbursementDAOImpl implements ReimbursementDAO {
 		return records;
 	}
 	
+
+	@Override
+	public List<Reimbursement> empGetAll(int userID) {
+		
+		List<Reimbursement> reimbursements = new ArrayList<Reimbursement>();
+		//System.out.println("Spinning up the method to get all reimbursements");
+
+		// establish a connection to the database (auto commit:off)
+		try (Connection conn = ConnectionFactory.getInstance().getConnection();) {
+
+			// prepared statement -> create the SQL INSERT statement to insert a new record
+			// into the table
+			String sql = "SELECT * FROM REIMBURSEMENT AND REIMB = ?";
+
+			// prepare the SQL call
+			PreparedStatement pstmt = conn.prepareStatement(sql);
+			pstmt.setInt(1, userID);
+
+			// execute the query
+			ResultSet rs = pstmt.executeQuery();
+			System.out.println("All Reimbursements Gathered");
+			while (rs.next()) {
+				Reimbursement r = new Reimbursement();
+
+				r.setReimbID(rs.getInt("REIMB_ID"));
+				r.setAmount(rs.getInt("REIMB_AMOUNT"));
+				r.setSubmitted(rs.getTimestamp("REIMB_SUBMITTED"));
+				r.setResolved(rs.getTimestamp("REIMB_RESOLVED"));
+				r.setDescription(rs.getString("REIMB_DESCRIPTION"));
+				r.setAuthor(rs.getInt("REIMB_AUTHOR"));
+				r.setResolver(rs.getInt("REIMB_RESOLVER"));
+				r.setStatusID(rs.getInt("REIMB_STATUS_ID"));
+				r.setTypeID(rs.getInt("REIMB_TYPE_ID"));
+				reimbursements.add(r);
+			}
+
+		} catch (SQLException sql) {
+			sql.printStackTrace();
+		}
+
+		return reimbursements;
+	}
+	
 	
 	@Override
-	public List<Reimbursement> mngGetAccept() {
+	public List<Reimbursement> mngGetApproved() {
 		
 		List<Reimbursement> records = new ArrayList<>();
 		
@@ -156,7 +200,50 @@ public class ReimbursementDAOImpl implements ReimbursementDAO {
 
 	
 	@Override
-	public List<Reimbursement> mngGetDecline() {
+	public List<Reimbursement> empGetApproved(int userID) {
+		// create a new object ()
+		List<Reimbursement> reimbursements = new ArrayList<Reimbursement>();
+		System.out.println("Spinning up the method to get all accepted reimbursements");
+
+		// establish a connection to the database (auto commit:off)
+		try (Connection conn = ConnectionFactory.getInstance().getConnection();) {
+
+			// prepared statement -> create the SQL INSERT statement to insert a new record
+			// into the table
+			String sql = "SELECT * FROM REIMBURSEMENT WHERE (REIMB_STATUS_ID = 3 AND AND REIMB = ?)";
+
+			// prepare the SQL call
+			PreparedStatement pstmt = conn.prepareStatement(sql);
+			pstmt.setInt(1, userID);
+
+			// execute the query
+			ResultSet rs = pstmt.executeQuery();
+			System.out.println("All Accepted Reimbursements Gathered");
+			while (rs.next()) {
+				Reimbursement r = new Reimbursement();
+
+				r.setReimbID(rs.getInt("REIMB_ID"));
+				r.setAmount(rs.getInt("REIMB_AMOUNT"));
+				r.setSubmitted(rs.getTimestamp("REIMB_SUBMITTED"));
+				r.setResolved(rs.getTimestamp("REIMB_RESOLVED"));
+				r.setDescription(rs.getString("REIMB_DESCRIPTION"));
+				r.setAuthor(rs.getInt("REIMB_AUTHOR"));
+				r.setResolver(rs.getInt("REIMB_RESOLVER"));
+				r.setStatusID(rs.getInt("REIMB_STATUS_ID"));
+				r.setTypeID(rs.getInt("REIMB_TYPE_ID"));
+				reimbursements.add(r);
+			}
+
+		} catch (SQLException sql) {
+			sql.printStackTrace();
+		}
+
+		return reimbursements;
+
+	}
+	
+	@Override
+	public List<Reimbursement> mngGetDeclined() {
 		List<Reimbursement> records = new ArrayList<>();
 		
 		try (Connection conn = ConnectionFactory.getInstance().getConnection();) {
@@ -192,9 +279,51 @@ public class ReimbursementDAOImpl implements ReimbursementDAO {
 		return records;
 	}
 
+	@Override
+ 	public List<Reimbursement> empGetDeclined(int userID) {
+		// create a new object ()
+		List<Reimbursement> reimbursements = new ArrayList<Reimbursement>();
+		System.out.println("Spinning up the method to get all declined reimbursements");
+
+		// establish a connection to the database (auto commit:off)
+		try (Connection conn = ConnectionFactory.getInstance().getConnection();) {
+
+			// prepared statement -> create the SQL INSERT statement to insert a new record
+			// into the table
+			String sql = "SELECT * FROM REIMBURSEMENT WHERE (REIMB_STATUS_ID = 2 AND REIMB = ?)";
+
+			// prepare the SQL call
+			PreparedStatement pstmt = conn.prepareStatement(sql);
+			pstmt.setInt(1, userID);
+
+			// execute the query
+			ResultSet rs = pstmt.executeQuery();
+			System.out.println("All Declined Reimbursements Gathered");
+			while (rs.next()) {
+				Reimbursement r = new Reimbursement();
+
+				r.setReimbID(rs.getInt("REIMB_ID"));
+				r.setAmount(rs.getInt("REIMB_AMOUNT"));
+				r.setSubmitted(rs.getTimestamp("REIMB_SUBMITTED"));
+				r.setResolved(rs.getTimestamp("REIMB_RESOLVED"));
+				r.setDescription(rs.getString("REIMB_DESCRIPTION"));
+				r.setAuthor(rs.getInt("REIMB_AUTHOR"));
+				r.setResolver(rs.getInt("REIMB_RESOLVER"));
+				r.setStatusID(rs.getInt("REIMB_STATUS_ID"));
+				r.setTypeID(rs.getInt("REIMB_TYPE_ID"));
+				reimbursements.add(r);
+			}
+
+		} catch (SQLException sql) {
+			sql.printStackTrace();
+		}
+
+		return reimbursements;
+	}
 	
 	@Override
 	public List<Reimbursement> mngGetPending() {
+
 	
 		List<Reimbursement> records = new ArrayList<>();
 		
@@ -231,9 +360,82 @@ public class ReimbursementDAOImpl implements ReimbursementDAO {
 		return records;
 	}
 
+	
+	
+	@Override
+	public List<Reimbursement> empGetPending(int userID) {
+		// create a new object ()
+				List<Reimbursement> reimbursements = new ArrayList<Reimbursement>();
+				System.out.println("Spinning up the method to get all declined reimbursements");
 
+				// establish a connection to the database (auto commit:off)
+				try (Connection conn = ConnectionFactory.getInstance().getConnection();) {
 
+					// prepared statement -> create the SQL INSERT statement to insert a new record
+					// into the table
+					String sql = "SELECT * FROM REIMBURSEMENT WHERE (REIMB_STATUS_ID = 1 AND REIMB = ?)";
 
+					// prepare the SQL call
+					PreparedStatement pstmt = conn.prepareStatement(sql);
+					pstmt.setInt(1, userID);
 
+					// execute the query
+					ResultSet rs = pstmt.executeQuery();
+					System.out.println("All Pending Reimbursements Gathered");
+					while (rs.next()) {
+						Reimbursement r = new Reimbursement();
+
+						r.setReimbID(rs.getInt("REIMB_ID"));
+						r.setAmount(rs.getInt("REIMB_AMOUNT"));
+						r.setSubmitted(rs.getTimestamp("REIMB_SUBMITTED"));
+						r.setResolved(rs.getTimestamp("REIMB_RESOLVED"));
+						r.setDescription(rs.getString("REIMB_DESCRIPTION"));
+						r.setAuthor(rs.getInt("REIMB_AUTHOR"));
+						r.setResolver(rs.getInt("REIMB_RESOLVER"));
+						r.setStatusID(rs.getInt("REIMB_STATUS_ID"));
+						r.setTypeID(rs.getInt("REIMB_TYPE_ID"));
+						reimbursements.add(r);
+					}
+
+				} catch (SQLException sql) {
+					sql.printStackTrace();
+				}
+
+				return reimbursements;
+	}
+
+	@Override
+	public boolean checkSingleRecord(int id) {
+		// check to see if their exists a record that corresponds with the inputed ID
+		try (Connection conn = ConnectionFactory.getInstance().getConnection();) {
+
+			// Construct & execute the corresponding SELECT statement
+			String sql = "SELECT * FROM REIMBURSEMENT WHERE REIMB_ID = ?";
+
+			// prepare the SQL call
+			PreparedStatement pstmt = conn.prepareStatement(sql);
+
+			// set the values
+			pstmt.setInt(1, id);
+
+			ResultSet rs = pstmt.executeQuery();
+
+			// check to see credentials match with the database
+			int count = 0;
+			while (rs.next()) {
+				++count;
+			}
+			if (count == 1) {
+				System.out.println("Reimbursement record exists");
+				return true;
+			} else {
+				return false;
+			}
+		} catch (SQLException sql) {
+			System.out.println("checkSingleRecord function");
+			sql.printStackTrace();
+		}
+		return false;
+	}
 	
 }

@@ -25,15 +25,16 @@ public class ConnectionFactory {
 	}
 	
 	//establishes connection to the database
-	public Connection getConnection() {
+	public Connection getConnection()  {
 		
 		Connection conn = null;
 		Properties prop = new Properties();
 		
 		try {
 			
+			Class.forName("oracle.jdbc.driver.OracleDriver");
 			// Load the properties file keys/values into the Properties object
-			prop.load(new FileReader("src/main/resources/Application.Properties"));
+			prop.load(new FileReader("C:/Users/Luctamar/git Repository/1810-Oct08-Java-USF/Jeffly_Luctamar_Code/Springtools projects/Week 3/Project1/ERS/src/main/resources/Application.Properties"));  //possible solution to possible paths problem URL fileLoc = getClass().getResource ("../../../application.properties");
 			
 			// Get a connection from the DriverManager
 			conn = DriverManager.getConnection(
@@ -47,6 +48,8 @@ public class ConnectionFactory {
 			fnfe.printStackTrace();
 		} catch (IOException ioe) {
 			ioe.printStackTrace();
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
 		}
 		
 		return conn;

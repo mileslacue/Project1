@@ -16,7 +16,8 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 	
 	
 	@Override
-	public Employee getEmployee(int author) {
+	public Employee getEmployee(int id) {
+		
 		
 		//constructs an employee object based on their UserID
 		Employee user = new Employee();
@@ -29,7 +30,7 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 			PreparedStatement pstmt = conn.prepareStatement(sql);
 
 			// set the values 
-			pstmt.setInt(1, author);
+			pstmt.setInt(1, id);
 
 			ResultSet rs = pstmt.executeQuery();			 
 		
@@ -92,8 +93,44 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 		return user; //should return the constructed employee(user) object
 	}
 
+	@Override
+	public boolean checkEmployee(String username, String password) {
+		
+		//constructs an employee object based on client-side login credentials
+		Employee user = new Employee();
+		try (Connection conn = ConnectionFactory.getInstance().getConnection();) {
 
-	
+			//Construct & execute the corresponding SELECT statement
+			String sql = "SELECT * FROM EMPLOYEES WHERE (Username = ? AND pass = ?)";
+			
+			// prepare the SQL call
+			PreparedStatement pstmt = conn.prepareStatement(sql);
+
+			// set the values 
+			pstmt.setString(1, username);
+			pstmt.setString(2, password);	
+			
+			ResultSet rs = pstmt.executeQuery();			 
+		
+			
+			//check to see credentials match with the database
+			int count = 0;
+			while (rs.next()) {
+			    ++count;
+			}
+			if (count == 1) {
+			    System.out.println("Username exists");
+			    return true;
+			}else {
+				return false;
+			}				
+		 }catch (SQLException sql) {
+			System.out.println("getEmployee function");
+			sql.printStackTrace();
+		}
+			
+		return false;
+	}
 	
 }
 

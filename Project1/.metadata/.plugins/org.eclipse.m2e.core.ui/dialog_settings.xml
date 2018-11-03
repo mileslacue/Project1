@@ -3,11 +3,15 @@
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
 			<item value="com.revature"/>
+			<item value="com.test"/>
 		</list>
 		<list key="name">
+			<item value="ExpenseReimbursement"/>
+			<item value="test"/>
 		</list>
 		<list key="artifactId">
 			<item value="ERS"/>
+			<item value="test"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -24,6 +28,14 @@
 	<section name="org.eclipse.m2e.core.pom.dependencies">
 	</section>
 	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
 	</section>
 	<section name="MavenProjectWizardArchetypePage">
 		<list key="projectNameTemplate">
@@ -37,6 +49,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\Luctamar\git Repository\1810-Oct08-Java-USF\Jeffly_Luctamar_Code\Springtools projects\Week 3\Project1\Servers"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

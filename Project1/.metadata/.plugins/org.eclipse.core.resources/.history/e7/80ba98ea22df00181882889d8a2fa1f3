@@ -1,0 +1,60 @@
+package com.revature.servlets;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.revature.models.Employee;
+import com.revature.models.Reimbursement;
+import com.revature.services.EmployeeServices;
+import com.revature.services.ReimbursementService;
+
+@WebServlet("/reimburse")
+public class ReimbursementServlet extends HttpServlet{
+
+	private static final long serialVersionUID = 1L;
+	
+	
+	//viewing of reimbursement records.
+	
+	//takes in a JSON object representing the user, makes a call to the reimb service layer passing in the 
+	//user object. the object is then used to call the one of the select all function(depending on the users role)
+	// and returns corresponding records
+	
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+		
+		//create the appropriate service objects
+		ReimbursementService reimburseService = new ReimbursementService();
+		EmployeeServices employeeService = new EmployeeServices();
+		
+		
+		//map the Stringified JSON to an array
+		ObjectMapper mapper = new ObjectMapper();
+	
+		//map the JSON object (received in the request), to an Employee
+		String[] userFields= mapper.readValue(request.getInputStream(), String[].class);
+		String userID = userFields[0];
+		Employee user = Employee.duplicate(employeeService.getEmployee(userID));
+		
+		
+		
+		//call one method from the reimb service class
+		List<Reimbursement> reimburseRecords = new ArrayList();
+		reimburseRecords = reimburseService.recordSelector(user)
+	}
+	
+	//creation of new reimbursement records
+	protected void doPut(HttpServletRequest request, HttpServletResponse resposnse) throws ServletException, IOException{
+		
+	}
+
+	//updating of reimbursement records(manager exclusive)
+	protected void doPatch(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+}

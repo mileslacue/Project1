@@ -18,7 +18,7 @@ public class ERS_Driver {
 		EmployeeDAOImpl emp1 = new EmployeeDAOImpl();
 		EmployeeDAOImpl emp2 = new EmployeeDAOImpl();
 		Employee emp = new Employee();
-		Employee emp3 = new Employee();
+		boolean emp3;
 		
 		//test.createReimbursement(2.0, 1,1, "this is a mock uhh");
 		
@@ -31,7 +31,7 @@ public class ERS_Driver {
 		
 		//Testing Employee get functions
 		emp = emp1.getEmployee(2);
-		emp3 = emp2.getEmployee("jSmith","pasword");
+		emp3 = emp2.checkEmployee("jSmith","pasord");
 		
 		System.out.println(emp);
 		System.out.println(emp3);

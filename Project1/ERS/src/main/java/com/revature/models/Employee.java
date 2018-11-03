@@ -27,6 +27,17 @@ public class Employee {
 		this.userRoleID = userRoleID;
 	}
 	
+	
+	public Employee(Employee originalUser) {
+		super();
+		this.employeeID = originalUser.employeeID;
+		this.username = originalUser.username;
+		this.email = originalUser.email;
+		this.pass = originalUser.pass;
+		this.First_Name = originalUser.First_Name;
+		this.Last_Name = originalUser.Last_Name;
+		this.userRoleID = originalUser.userRoleID;
+}
 
 
 	public int getEmployeeID() {
@@ -162,6 +173,10 @@ public class Employee {
 				+ First_Name + ", Last_Name=" + Last_Name + ", email=" + email + ", userRoleID=" + userRoleID + "]";
 	}
 
+	
+	public static Employee duplicate(Employee originalUser) {
+		return new Employee(originalUser);
+}
 
 	
 	
