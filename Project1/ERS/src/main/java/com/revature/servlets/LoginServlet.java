@@ -23,6 +23,7 @@ public class LoginServlet extends HttpServlet {
 	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		
 		System.out.println("Request sent to LoginServlet.doPost()");
 		//create a new Services object from the Employee Services
 		EmployeeServices userService = new EmployeeServices();

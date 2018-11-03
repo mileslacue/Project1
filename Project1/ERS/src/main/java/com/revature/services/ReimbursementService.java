@@ -31,7 +31,7 @@ public class ReimbursementService {
 	}
 	
 	
-	//depending on the users role return ALL relevant records
+/*	//depending on the users role return ALL relevant records
 	public List<Reimbursement> recordSelector(Employee user) {
 				
 		//depending on the users role return ALL relevant records(views to be organized in JavaScript)
@@ -42,7 +42,7 @@ public class ReimbursementService {
 		}
 		
 	}
-	
+	*/
 	
 	
 	
