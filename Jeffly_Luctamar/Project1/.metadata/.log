@@ -8634,3 +8634,813 @@ java.lang.InterruptedException
 		src/main/java[*]: {CHILDREN}
 			com.revature.servlets[*]: {CHILDREN}
 				[Working copy] LoginServlet.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-03 23:20:31.605
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.servlets[*]: {CHILDREN}
+				LoginServlet.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-03 23:20:33.793
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.servlets[*]: {CHILDREN}
+				ReimbursementServlet.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-03 23:20:35.030
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.fQqQCKKx
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-03 23:20:35.030
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.fQqQCKKx
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-03 23:20:35.030
+!MESSAGE subsribers = null
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-03 23:20:35.030
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.fQqQCKKx => OK
+!SESSION 2018-11-04 20:20:25.402 -----------------------------------------------
+eclipse.buildId=4.0.0.201809220817-RELEASE
+java.version=1.8.0_181
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2018-11-04 20:21:03.636
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-11-04 20:21:03.636
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@e97f51c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@29394966,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-04 20:21:14.106
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-11-04 20:21:21.569
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Luctamar'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.lsp4e 4 0 2018-11-04 20:21:25.510
+!MESSAGE LanguageServer not initialized after 10s
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.LanguageServerWrapper.getServerCapabilities(LanguageServerWrapper.java:563)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSWrappers(LanguageServiceAccessor.java:301)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSPDocumentInfosFor(LanguageServiceAccessor.java:444)
+	at org.eclipse.lsp4e.operations.color.DocumentColorProvider.lambda$0(DocumentColorProvider.java:53)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+
+!ENTRY org.eclipse.lsp4e 4 0 2018-11-04 20:21:25.514
+!MESSAGE LanguageServer not initialized after 10s
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.LanguageServerWrapper.getServerCapabilities(LanguageServerWrapper.java:563)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.lambda$8(LanguageServiceAccessor.java:372)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.HashMap$KeySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.collect(Unknown Source)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getMatchingStartedWrappers(LanguageServiceAccessor.java:374)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSWrappers(LanguageServiceAccessor.java:284)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSPDocumentInfosFor(LanguageServiceAccessor.java:444)
+	at org.eclipse.lsp4e.operations.codelens.CodeLensProvider.lambda$0(CodeLensProvider.java:35)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+
+!ENTRY org.eclipse.osgi 2 0 2018-11-04 20:21:26.116
+!MESSAGE While loading class "org.eclipse.m2e.jdt.internal.MavenClasspathContainerInitializer", thread "Thread[Worker-6: Decoration Calculation,5,main]" timed out waiting (5030ms) for thread "Thread[org.eclipse.jdt.internal.ui.text.JavaReconciler,1,main]" to finish starting bundle "org.eclipse.m2e.jdt_1.9.1.20180912-1601 [270]". To avoid deadlock, thread "Thread[Worker-6: Decoration Calculation,5,main]" is proceeding but "org.eclipse.m2e.jdt.internal.MavenClasspathContainerInitializer" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: Unable to acquire the state change lock for the module: osgi.identity; type="osgi.bundle"; version:Version="1.9.1.20180912-1601"; osgi.identity="org.eclipse.m2e.jdt"; singleton:="true" [id=270] STARTED [STARTED]
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:340)
+	at org.eclipse.osgi.container.Module.start(Module.java:404)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:471)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:557)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:331)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:473)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:422)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:414)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:153)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:612)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:180)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:934)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.jdt.core.JavaCore.computeClasspathContainerInitializer(JavaCore.java:3669)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainerInitializer(JavaCore.java:3645)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeContainer(JavaModelManager.java:3192)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getClasspathContainer(JavaModelManager.java:2133)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainer(JavaCore.java:3622)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:3147)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:3311)
+	at org.eclipse.jdt.internal.core.JavaProject.getResolvedClasspath(JavaProject.java:2422)
+	at org.eclipse.jst.j2ee.classpathdep.ClasspathDependencyUtil.getComponentClasspathDependencies(ClasspathDependencyUtil.java:356)
+	at org.eclipse.jst.j2ee.classpathdep.ClasspathDependencyUtil.getComponentClasspathDependencies(ClasspathDependencyUtil.java:276)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getJavaClasspathReferences(J2EEModuleVirtualComponent.java:276)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getNonManifestRefs(J2EEModuleVirtualComponent.java:246)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getReferences(J2EEModuleVirtualComponent.java:170)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getReferences(J2EEModuleVirtualComponent.java:218)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getReferences(J2EEModuleVirtualComponent.java:211)
+	at org.eclipse.jst.common.internal.modulecore.SingleRootUtil.hasConsumableReferences(SingleRootUtil.java:217)
+	at org.eclipse.jst.common.internal.modulecore.SingleRootUtil.validateSingleRoot(SingleRootUtil.java:165)
+	at org.eclipse.jst.common.internal.modulecore.SingleRootUtil.isSingleRoot(SingleRootUtil.java:93)
+	at org.eclipse.jst.common.internal.modulecore.SingleRootExportParticipant.canOptimize(SingleRootExportParticipant.java:90)
+	at org.eclipse.wst.common.componentcore.internal.flat.FlatVirtualComponent.canOptimize(FlatVirtualComponent.java:203)
+	at org.eclipse.wst.common.componentcore.internal.flat.FlatVirtualComponent.cacheResources(FlatVirtualComponent.java:185)
+	at org.eclipse.wst.common.componentcore.internal.flat.FlatVirtualComponent.getChildModules(FlatVirtualComponent.java:160)
+	at org.eclipse.wst.web.internal.deployables.FlatComponentDeployable.getExportModelChildren(FlatComponentDeployable.java:259)
+	at org.eclipse.wst.web.internal.deployables.FlatComponentDeployable.getModules(FlatComponentDeployable.java:270)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServer.getChildModules(TomcatServer.java:386)
+	at org.eclipse.wst.server.core.internal.Server.getChildModules(Server.java:2647)
+	at org.eclipse.wst.server.core.internal.Server.visitModule(Server.java:3068)
+	at org.eclipse.wst.server.core.internal.Server.visit(Server.java:3049)
+	at org.eclipse.wst.server.core.internal.Server.isPublishUnknown(Server.java:1269)
+	at org.eclipse.wst.server.ui.internal.cnf.ServerDecorator.getServerStatusLabel(ServerDecorator.java:140)
+	at org.eclipse.wst.server.ui.internal.cnf.ServerDecorator.decorate(ServerDecorator.java:73)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:261)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:107)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:380)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:362)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:350)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:313)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.util.concurrent.TimeoutException: Timeout after waiting 5 seconds to acquire the lock.
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:337)
+	... 55 more
+Root exception:
+java.util.concurrent.TimeoutException: Timeout after waiting 5 seconds to acquire the lock.
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:337)
+	at org.eclipse.osgi.container.Module.start(Module.java:404)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:471)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:557)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:331)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:473)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:422)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:414)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:153)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:612)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:180)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:934)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.jdt.core.JavaCore.computeClasspathContainerInitializer(JavaCore.java:3669)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainerInitializer(JavaCore.java:3645)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeContainer(JavaModelManager.java:3192)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getClasspathContainer(JavaModelManager.java:2133)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainer(JavaCore.java:3622)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:3147)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:3311)
+	at org.eclipse.jdt.internal.core.JavaProject.getResolvedClasspath(JavaProject.java:2422)
+	at org.eclipse.jst.j2ee.classpathdep.ClasspathDependencyUtil.getComponentClasspathDependencies(ClasspathDependencyUtil.java:356)
+	at org.eclipse.jst.j2ee.classpathdep.ClasspathDependencyUtil.getComponentClasspathDependencies(ClasspathDependencyUtil.java:276)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getJavaClasspathReferences(J2EEModuleVirtualComponent.java:276)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getNonManifestRefs(J2EEModuleVirtualComponent.java:246)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getReferences(J2EEModuleVirtualComponent.java:170)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getReferences(J2EEModuleVirtualComponent.java:218)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getReferences(J2EEModuleVirtualComponent.java:211)
+	at org.eclipse.jst.common.internal.modulecore.SingleRootUtil.hasConsumableReferences(SingleRootUtil.java:217)
+	at org.eclipse.jst.common.internal.modulecore.SingleRootUtil.validateSingleRoot(SingleRootUtil.java:165)
+	at org.eclipse.jst.common.internal.modulecore.SingleRootUtil.isSingleRoot(SingleRootUtil.java:93)
+	at org.eclipse.jst.common.internal.modulecore.SingleRootExportParticipant.canOptimize(SingleRootExportParticipant.java:90)
+	at org.eclipse.wst.common.componentcore.internal.flat.FlatVirtualComponent.canOptimize(FlatVirtualComponent.java:203)
+	at org.eclipse.wst.common.componentcore.internal.flat.FlatVirtualComponent.cacheResources(FlatVirtualComponent.java:185)
+	at org.eclipse.wst.common.componentcore.internal.flat.FlatVirtualComponent.getChildModules(FlatVirtualComponent.java:160)
+	at org.eclipse.wst.web.internal.deployables.FlatComponentDeployable.getExportModelChildren(FlatComponentDeployable.java:259)
+	at org.eclipse.wst.web.internal.deployables.FlatComponentDeployable.getModules(FlatComponentDeployable.java:270)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServer.getChildModules(TomcatServer.java:386)
+	at org.eclipse.wst.server.core.internal.Server.getChildModules(Server.java:2647)
+	at org.eclipse.wst.server.core.internal.Server.visitModule(Server.java:3068)
+	at org.eclipse.wst.server.core.internal.Server.visit(Server.java:3049)
+	at org.eclipse.wst.server.core.internal.Server.isPublishUnknown(Server.java:1269)
+	at org.eclipse.wst.server.ui.internal.cnf.ServerDecorator.getServerStatusLabel(ServerDecorator.java:140)
+	at org.eclipse.wst.server.ui.internal.cnf.ServerDecorator.decorate(ServerDecorator.java:73)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:261)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:107)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:380)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:362)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:350)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:313)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.osgi 2 0 2018-11-04 20:21:26.128
+!MESSAGE While loading class "org.eclipse.m2e.jdt.internal.MavenClasspathContainerInitializer", thread "Thread[Worker-7: Initializing Servers view,5,main]" timed out waiting (5030ms) for thread "Thread[org.eclipse.jdt.internal.ui.text.JavaReconciler,1,main]" to finish starting bundle "org.eclipse.m2e.jdt_1.9.1.20180912-1601 [270]". To avoid deadlock, thread "Thread[Worker-7: Initializing Servers view,5,main]" is proceeding but "org.eclipse.m2e.jdt.internal.MavenClasspathContainerInitializer" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: Unable to acquire the state change lock for the module: osgi.identity; type="osgi.bundle"; version:Version="1.9.1.20180912-1601"; osgi.identity="org.eclipse.m2e.jdt"; singleton:="true" [id=270] STARTED [STARTED]
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:340)
+	at org.eclipse.osgi.container.Module.start(Module.java:404)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:471)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:557)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:331)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:473)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:422)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:414)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:153)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:612)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:180)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:934)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.jdt.core.JavaCore.computeClasspathContainerInitializer(JavaCore.java:3669)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainerInitializer(JavaCore.java:3645)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeContainer(JavaModelManager.java:3192)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getClasspathContainer(JavaModelManager.java:2133)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainer(JavaCore.java:3622)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:3147)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:3311)
+	at org.eclipse.jdt.internal.core.JavaProject.getResolvedClasspath(JavaProject.java:2422)
+	at org.eclipse.jst.j2ee.classpathdep.ClasspathDependencyUtil.getComponentClasspathDependencies(ClasspathDependencyUtil.java:356)
+	at org.eclipse.jst.j2ee.classpathdep.ClasspathDependencyUtil.getComponentClasspathDependencies(ClasspathDependencyUtil.java:276)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getJavaClasspathReferences(J2EEModuleVirtualComponent.java:276)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getNonManifestRefs(J2EEModuleVirtualComponent.java:246)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getReferences(J2EEModuleVirtualComponent.java:170)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getReferences(J2EEModuleVirtualComponent.java:218)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getReferences(J2EEModuleVirtualComponent.java:211)
+	at org.eclipse.jst.common.internal.modulecore.SingleRootUtil.hasConsumableReferences(SingleRootUtil.java:217)
+	at org.eclipse.jst.common.internal.modulecore.SingleRootUtil.validateSingleRoot(SingleRootUtil.java:165)
+	at org.eclipse.jst.common.internal.modulecore.SingleRootUtil.isSingleRoot(SingleRootUtil.java:93)
+	at org.eclipse.jst.common.internal.modulecore.SingleRootExportParticipant.canOptimize(SingleRootExportParticipant.java:90)
+	at org.eclipse.wst.common.componentcore.internal.flat.FlatVirtualComponent.canOptimize(FlatVirtualComponent.java:203)
+	at org.eclipse.wst.common.componentcore.internal.flat.FlatVirtualComponent.cacheResources(FlatVirtualComponent.java:185)
+	at org.eclipse.wst.common.componentcore.internal.flat.FlatVirtualComponent.getChildModules(FlatVirtualComponent.java:160)
+	at org.eclipse.wst.web.internal.deployables.FlatComponentDeployable.getExportModelChildren(FlatComponentDeployable.java:259)
+	at org.eclipse.wst.web.internal.deployables.FlatComponentDeployable.getModules(FlatComponentDeployable.java:270)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServer.getChildModules(TomcatServer.java:386)
+	at org.eclipse.wst.server.core.internal.Server.getChildModules(Server.java:2647)
+	at org.eclipse.wst.server.core.internal.Server.visitModule(Server.java:3068)
+	at org.eclipse.wst.server.core.internal.Server.visit(Server.java:3049)
+	at org.eclipse.wst.server.core.internal.Server.getAllModules(Server.java:1552)
+	at org.eclipse.wst.server.ui.internal.cnf.ServersView2$3.run(ServersView2.java:189)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.util.concurrent.TimeoutException: Timeout after waiting 5 seconds to acquire the lock.
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:337)
+	... 47 more
+Root exception:
+java.util.concurrent.TimeoutException: Timeout after waiting 5 seconds to acquire the lock.
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:337)
+	at org.eclipse.osgi.container.Module.start(Module.java:404)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:471)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:557)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:331)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:473)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:422)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:414)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:153)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:612)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:180)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:934)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.jdt.core.JavaCore.computeClasspathContainerInitializer(JavaCore.java:3669)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainerInitializer(JavaCore.java:3645)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeContainer(JavaModelManager.java:3192)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getClasspathContainer(JavaModelManager.java:2133)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainer(JavaCore.java:3622)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:3147)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:3311)
+	at org.eclipse.jdt.internal.core.JavaProject.getResolvedClasspath(JavaProject.java:2422)
+	at org.eclipse.jst.j2ee.classpathdep.ClasspathDependencyUtil.getComponentClasspathDependencies(ClasspathDependencyUtil.java:356)
+	at org.eclipse.jst.j2ee.classpathdep.ClasspathDependencyUtil.getComponentClasspathDependencies(ClasspathDependencyUtil.java:276)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getJavaClasspathReferences(J2EEModuleVirtualComponent.java:276)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getNonManifestRefs(J2EEModuleVirtualComponent.java:246)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getReferences(J2EEModuleVirtualComponent.java:170)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getReferences(J2EEModuleVirtualComponent.java:218)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getReferences(J2EEModuleVirtualComponent.java:211)
+	at org.eclipse.jst.common.internal.modulecore.SingleRootUtil.hasConsumableReferences(SingleRootUtil.java:217)
+	at org.eclipse.jst.common.internal.modulecore.SingleRootUtil.validateSingleRoot(SingleRootUtil.java:165)
+	at org.eclipse.jst.common.internal.modulecore.SingleRootUtil.isSingleRoot(SingleRootUtil.java:93)
+	at org.eclipse.jst.common.internal.modulecore.SingleRootExportParticipant.canOptimize(SingleRootExportParticipant.java:90)
+	at org.eclipse.wst.common.componentcore.internal.flat.FlatVirtualComponent.canOptimize(FlatVirtualComponent.java:203)
+	at org.eclipse.wst.common.componentcore.internal.flat.FlatVirtualComponent.cacheResources(FlatVirtualComponent.java:185)
+	at org.eclipse.wst.common.componentcore.internal.flat.FlatVirtualComponent.getChildModules(FlatVirtualComponent.java:160)
+	at org.eclipse.wst.web.internal.deployables.FlatComponentDeployable.getExportModelChildren(FlatComponentDeployable.java:259)
+	at org.eclipse.wst.web.internal.deployables.FlatComponentDeployable.getModules(FlatComponentDeployable.java:270)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServer.getChildModules(TomcatServer.java:386)
+	at org.eclipse.wst.server.core.internal.Server.getChildModules(Server.java:2647)
+	at org.eclipse.wst.server.core.internal.Server.visitModule(Server.java:3068)
+	at org.eclipse.wst.server.core.internal.Server.visit(Server.java:3049)
+	at org.eclipse.wst.server.core.internal.Server.getAllModules(Server.java:1552)
+	at org.eclipse.wst.server.ui.internal.cnf.ServersView2$3.run(ServersView2.java:189)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.lsp4e 4 0 2018-11-04 20:21:35.521
+!MESSAGE LanguageServer not initialized after 10s
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.LanguageServerWrapper.getServerCapabilities(LanguageServerWrapper.java:563)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSWrappers(LanguageServiceAccessor.java:301)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSPDocumentInfosFor(LanguageServiceAccessor.java:444)
+	at org.eclipse.lsp4e.operations.codelens.CodeLensProvider.lambda$0(CodeLensProvider.java:35)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+
+!ENTRY org.eclipse.lsp4e 4 0 2018-11-04 20:21:35.535
+!MESSAGE LanguageServer not initialized after 10s
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.LanguageServerWrapper.getServerCapabilities(LanguageServerWrapper.java:563)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSWrappers(LanguageServiceAccessor.java:301)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSPDocumentInfosFor(LanguageServiceAccessor.java:444)
+	at org.eclipse.lsp4e.operations.codelens.CodeLensProvider.lambda$0(CodeLensProvider.java:35)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+
+!ENTRY org.eclipse.lsp4e 4 0 2018-11-04 20:21:36.523
+!MESSAGE LanguageServer not initialized after 10s
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.LanguageServerWrapper.getServerCapabilities(LanguageServerWrapper.java:563)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.lambda$8(LanguageServiceAccessor.java:372)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.HashMap$KeySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.collect(Unknown Source)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getMatchingStartedWrappers(LanguageServiceAccessor.java:374)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSWrappers(LanguageServiceAccessor.java:284)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSPDocumentInfosFor(LanguageServiceAccessor.java:444)
+	at org.eclipse.lsp4e.ConnectDocumentToLanguageServerSetupParticipant$1.run(ConnectDocumentToLanguageServerSetupParticipant.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.lsp4e 4 0 2018-11-04 20:21:36.528
+!MESSAGE LanguageServer not initialized after 10s
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.LanguageServerWrapper.getServerCapabilities(LanguageServerWrapper.java:563)
+	at org.eclipse.lsp4e.LanguageServiceAccessor$LSPDocumentInfo.getCapabilites(LanguageServiceAccessor.java:129)
+	at org.eclipse.lsp4e.operations.color.DocumentColorProvider.lambda$0(DocumentColorProvider.java:63)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-04 20:21:44.565
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.dnnWtqBb
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-04 20:21:44.569
+!MESSAGE subscribing to classpath changes: sts4.classpath.dnnWtqBb
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-04 20:21:44.579
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-04 20:21:44.581
+!MESSAGE subsribers = [sts4.classpath.dnnWtqBb]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-04 20:21:44.582
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-04 20:21:44.588
+!MESSAGE project ERS ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-04 20:21:44.592
+!MESSAGE project Servers ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-04 20:21:44.594
+!MESSAGE project Servers SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-04 20:21:44.595
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-04 20:21:44.597
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.dnnWtqBb => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-04 20:21:44.599
+!MESSAGE Preparing classpath changed notification ERS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-04 20:21:44.601
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-04 20:21:44.616
+!MESSAGE classpath=31 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-04 20:21:44.617
+!MESSAGE executing callback sts4.classpath.dnnWtqBb ERS false 31
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-04 20:21:45.177
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CONTENT}
+		ResourceDelta(/ERS/target/m2e-wtp)[*]
+		ResourceDelta(/ERS/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-04 20:21:46.220
+!MESSAGE executing callback sts4.classpath.dnnWtqBb SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-04 20:22:07.646
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CONTENT}
+	ResourceDelta(/Servers)[*]]
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2018-11-04 20:22:07.849
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-04 20:22:11.559
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CONTENT}
+	ResourceDelta(/Servers)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-04 20:22:18.225
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CONTENT}
+	ResourceDelta(/Servers)[*]]
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2018-11-04 20:22:27.688
+!MESSAGE Port 8080 required by Tomcat v9.0 Server at localhost is already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-04 20:22:42.016
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CONTENT}
+	ResourceDelta(/Servers)[*]]
+
+!ENTRY org.eclipse.ui 2 2 2018-11-04 20:23:07.365
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.ui.projectPropertyPage (bundle: org.springframework.ide.eclipse.boot.validation, propertyPage: org.springframework.ide.eclipse.boot.validation.preferences.BootValidationProjectPropertyPage)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-04 20:23:43.403
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.revature.servlets[*]: {CHILDREN}
+				UpdateReimbursementServlet.java[+]: {}
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-04 20:23:43.785
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CONTENT}
+		ResourceDelta(/ERS/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-04 20:23:43.820
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.servlets[*]: {CHILDREN}
+				[Working copy] UpdateReimbursementServlet.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-04 20:26:25.039
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.servlets[*]: {CHILDREN}
+				[Working copy] LoginServlet.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.eclipse.ui 4 0 2018-11-04 20:26:48.478
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:68)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler$1.run(UIEventObjectSupplier.java:67)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:147)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4594)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:215)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler.handleEvent(UIEventObjectSupplier.java:64)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:204)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:199)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:138)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:81)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:42)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl.setVisible(UIElementImpl.java:349)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributionRecord.updateVisibility(ContributionRecord.java:113)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter.updateElementVisibility(MenuManagerRendererFilter.java:194)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter.updateElementVisibility(MenuManagerRendererFilter.java:205)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.showMenu(MenuManagerShowProcessor.java:258)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.menuAboutToHide(MenuManagerShowProcessor.java:115)
+	at org.eclipse.jface.internal.MenuManagerEventHelper.showEventPostHelper(MenuManagerEventHelper.java:95)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:474)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:468)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:500)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:259)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4145)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1055)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1060)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:5148)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4797)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:348)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1502)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2162)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4784)
+	at org.eclipse.swt.internal.win32.OS.TrackPopupMenu(Native Method)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:253)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:3999)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3555)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:628)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:199)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:391)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:246)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+Caused by: java.lang.NullPointerException
+	at org.eclipse.tm4e.ui.internal.menus.ThemeContribution.getContributionItems(ThemeContribution.java:58)
+	at org.eclipse.ui.actions.CompoundContributionItem.getContributionItemsToFill(CompoundContributionItem.java:83)
+	at org.eclipse.ui.actions.CompoundContributionItem.fill(CompoundContributionItem.java:57)
+	at org.eclipse.ui.internal.menus.DynamicMenuContributionItem.fill(DynamicMenuContributionItem.java:150)
+	at org.eclipse.jface.action.MenuManager.doItemFill(MenuManager.java:731)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:813)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:672)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.scheduleManagerUpdate(MenuManagerRenderer.java:1222)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.subscribeUIElementTopicAllRenderedVisibility(MenuManagerRenderer.java:203)
+	at sun.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	... 64 more
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-04 20:27:22.867
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.revature.servlets[*]: {CHILDREN}
+				[Working copy] ReimbursementServlet.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-04 20:27:22.973
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.revature.servlets[*]: {CHILDREN}
+				[Working copy] UpdateReimbursementServlet.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-04 20:27:23.091
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CONTENT}
+		ResourceDelta(/ERS/src)[*]
+		ResourceDelta(/ERS/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-04 22:10:39.280
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.revature.servlets[*]: {CHILDREN}
+				[Working copy] UpdateReimbursementServlet.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-04 22:10:40.190
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CONTENT}
+		ResourceDelta(/ERS/src)[*]
+		ResourceDelta(/ERS/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-04 22:12:13.395
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.revature.servlets[*]: {CHILDREN}
+				[Working copy] UpdateReimbursementServlet.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-04 22:12:13.629
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CONTENT}
+		ResourceDelta(/ERS/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-04 22:13:15.984
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.revature.servlets[*]: {CHILDREN}
+				[Working copy] UpdateReimbursementServlet.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-04 22:13:16.573
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CONTENT}
+		ResourceDelta(/ERS/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-04 22:15:32.764
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.servlets[*]: {CHILDREN}
+				[Working copy] LoadViewServlet.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-04 22:15:38.651
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.servlets[*]: {CHILDREN}
+				UpdateReimbursementServlet.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-04 22:15:40.829
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.servlets[*]: {CHILDREN}
+				LoginServlet.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-04 22:15:44.769
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.servlets[*]: {CHILDREN}
+				ReimbursementServlet.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-04 22:17:24.641
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.servlets[*]: {CHILDREN}
+				[Working copy] UpdateReimbursementServlet.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-04 22:17:45.068
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.revature.servlets[*]: {CHILDREN}
+				[Working copy] UpdateReimbursementServlet.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-04 22:17:45.301
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CONTENT}
+		ResourceDelta(/ERS/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-04 22:17:47.765
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.servlets[*]: {CHILDREN}
+				[Working copy] ReimbursementServlet.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-04 22:19:04.718
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.revature.servlets[*]: {CHILDREN}
+				[Working copy] ReimbursementServlet.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-04 22:19:04.960
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CONTENT}
+		ResourceDelta(/ERS/src)[*]
+		ResourceDelta(/ERS/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-04 22:20:11.546
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.revature.servlets[*]: {CHILDREN}
+				[Working copy] ReimbursementServlet.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-04 22:20:11.721
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CONTENT}
+		ResourceDelta(/ERS/src)[*]
+		ResourceDelta(/ERS/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-04 22:25:52.265
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.revature.servlets[*]: {CHILDREN}
+				[Working copy] ReimbursementServlet.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-04 22:25:52.476
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CONTENT}
+		ResourceDelta(/ERS/src)[*]
+		ResourceDelta(/ERS/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-04 22:26:11.032
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.servlets[*]: {CHILDREN}
+				UpdateReimbursementServlet.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-04 22:26:14.072
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.revature.servlets[*]: {CHILDREN}
+				[Working copy] ReimbursementServlet.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-04 22:26:14.148
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.servlets[*]: {CHILDREN}
+				ReimbursementServlet.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-04 22:26:14.320
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CONTENT}
+		ResourceDelta(/ERS/src)[*]
+		ResourceDelta(/ERS/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-04 22:27:03.738
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.revature.servlets[*]: {CHILDREN}
+				[Working copy] LoadViewServlet.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/ERS/src)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-04 22:27:03.922
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	ERS[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.revature.servlets[*]: {CHILDREN}
+				LoadViewServlet.java[-]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-04 22:27:04.056
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.dnnWtqBb
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-04 22:27:04.057
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.dnnWtqBb
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-04 22:27:04.058
+!MESSAGE subsribers = null
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-04 22:27:04.059
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.dnnWtqBb => OK
