@@ -4,10 +4,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
-
 import com.revature.models.Employee;
-import com.revature.models.Reimbursement;
 import com.revature.util.ConnectionFactory;
 
 //Contain the implemented Data Access Methods {CRUD(Create.Read.Update.Delete) methods}

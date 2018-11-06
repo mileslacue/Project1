@@ -24,17 +24,17 @@ public class ERS_Driver {
 		
 		
 		//Testing the reimbursement get functions
-		record = test.mngGetAll();
-		for(Reimbursement e : record) {
-			System.out.println(e);
-		}
+//		record = test.mngGetAll();
+//		for(Reimbursement e : record) {
+//			System.out.println(e);
+//		}
 		
 		//Testing Employee get functions
 		emp = emp1.getEmployee(2);
-		emp3 = emp2.checkEmployee("jSmith","pasord");
+		//emp3 = emp2.checkEmployee("jSmith","pasword");
 		
 		System.out.println(emp);
-		System.out.println(emp3);
+		//System.out.println(emp3);
 		
 		
 		

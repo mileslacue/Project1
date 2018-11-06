@@ -128,7 +128,7 @@ public class ReimbursementDAOImpl implements ReimbursementDAO {
 
 			// prepared statement -> create the SQL INSERT statement to insert a new record
 			// into the table
-			String sql = "SELECT * FROM REIMBURSEMENT AND REIMB = ?";
+			String sql = "SELECT * FROM REIMBURSEMENT WHERE REIMB_AUTHOR = ?";
 
 			// prepare the SQL call
 			PreparedStatement pstmt = conn.prepareStatement(sql);
