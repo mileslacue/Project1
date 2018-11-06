@@ -30,14 +30,15 @@ public class ERS_Driver {
 //		}
 		
 		//Testing Employee get functions
-		emp = emp1.getEmployee(2);
-		//emp3 = emp2.checkEmployee("jSmith","pasword");
+//		emp = emp1.getEmployee(2);
+//		//emp3 = emp2.checkEmployee("jSmith","pasword");
+//		
+//		System.out.println(emp);
+//		//System.out.println(emp3);
+//		
 		
-		System.out.println(emp);
-		//System.out.println(emp3);
-		
-		
-		
+	
+		System.out.println(test.empGetPending(4));
 		
 		
 	}

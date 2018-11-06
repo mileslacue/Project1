@@ -18,32 +18,32 @@ import com.revature.services.EmployeeServices;
 import com.revature.services.ReimbursementService;
 
 @WebServlet("/reimburse")
-public class ReimbursementServlet extends HttpServlet{
+public class ReimbursementServlet extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;
-	
-	
-	//viewing of reimbursement records.
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
-		
-		//create the appropriate service objects
+
+	// viewing of reimbursement records.
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+
+		// create the appropriate service objects
 		ReimbursementService reimburseService = new ReimbursementService();
 		EmployeeServices employeeService = new EmployeeServices();
 		List<Reimbursement> reimburseRecords = new ArrayList<>();
-		
-	
-		//map the Stringified JSON to an array 
+
+		// map the Stringified JSON to an array
 		ObjectMapper mapper = new ObjectMapper();
-		String[] userFields= mapper.readValue(request.getInputStream(), String[].class);
-		int userID = Integer.parseInt(userFields[0]) ;
+		String[] userFields = mapper.readValue(request.getInputStream(), String[].class);
+		int userID = Integer.parseInt(userFields[0]);
 		int userRole = Integer.parseInt(userFields[1]);
 		int statusID = Integer.parseInt(userFields[2]);
 		Employee user = Employee.duplicate(employeeService.getEmployee(userID));
-		
-		if (userRole == 2)//Checks for manager 
+
+		if (userRole == 2)// Checks for manager
 			switch (statusID) {
-			case 0: reimburseRecords = reimburseService.mngGetAll();
-					break; //returns all reimbursements
+			case 0:
+				reimburseRecords = reimburseService.mngGetAll();
+				break; // returns all reimbursements
 			case 1:
 				reimburseRecords = reimburseService.mngGetPending();
 				break; // returns users pending reimbursements
@@ -56,48 +56,66 @@ public class ReimbursementServlet extends HttpServlet{
 			default:
 				reimburseRecords = reimburseService.mngGetAll();
 				break;
-			}else { 
-				
-				switch (statusID) {
-				case 0: reimburseRecords = reimburseService.empGetAll(userID);
-					break;
-				case 1:
-					reimburseRecords = reimburseService.empGetPending(userID);
-					break; // returns users pending reimbursements
-				case 2:
-					reimburseRecords = reimburseService.empGetDeclined(userID);
-					break; // returns users declined reimbursements
-				case 3:
-					reimburseRecords = reimburseService.empGetApproved(userID);
-					break; // returns users approved reimbursements
-				default:
-					reimburseRecords = reimburseService.empGetAll(userID);
-					break;			
+			}
+		else {
+
+			switch (statusID) {
+			case 0:
+				reimburseRecords = reimburseService.empGetAll(userID);
+				break;
+			case 1:
+				reimburseRecords = reimburseService.empGetPending(userID);
+				break; // returns users pending reimbursements
+			case 2:
+				reimburseRecords = reimburseService.empGetDeclined(userID);
+				break; // returns users declined reimbursements
+			case 3:
+				reimburseRecords = reimburseService.empGetApproved(userID);
+				break; // returns users approved reimbursements
+			default:
+				reimburseRecords = reimburseService.empGetAll(userID);
+				break;
 			}
 		}
-		
-		//return a JSON object that represents the list of records
+
+		// return a JSON object that represents the list of records
 		PrintWriter pw = response.getWriter();
 		response.setContentType("application/json");
 		String recordsJSON = mapper.writeValueAsString(reimburseRecords);
 		pw.write(recordsJSON);
 	}
-	
-	//creation of new reimbursement records
-	protected void doPut(HttpServletRequest request, HttpServletResponse resposnse) throws ServletException, IOException{
+
+	// creation of new reimbursement records
+	protected void doPut(HttpServletRequest request, HttpServletResponse resposnse)
+			throws ServletException, IOException {
+		
+		System.out.println("Sucessfully entered doPut()");
 		
 		// create appropriate service objects
 		ReimbursementService reimburseService = new ReimbursementService();
 		EmployeeServices employeeService = new EmployeeServices();
 
 		// map incoming JSON information to an array
-		// map the Stringified JSON to an array
 		ObjectMapper mapper = new ObjectMapper();
 		String[] userFields = mapper.readValue(request.getInputStream(), String[].class);
+
+		// extract relevant information
+		Double amount = Double.parseDouble(userFields[0]);
+		int userID = Integer.parseInt(userFields[1]);
+		int reimbType = Integer.parseInt(userFields[2]);
+		String description = userFields[3];
+		System.out.println("Fields created");
+		
+		Employee user = Employee.duplicate(employeeService.getEmployee(userID));
+
+		// creates reimbursement record and inserts it into the table
+		System.out.println("Entering create reimbursement method");
+		reimburseService.createReimbursement(amount, userID, reimbType, description);
 	}
 
-	//updating of reimbursement records(manager exclusive)
-	protected void doPatch(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
-		
+	// updating of reimbursement records(manager exclusive)
+	protected void doPatch(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+
 	}
 }

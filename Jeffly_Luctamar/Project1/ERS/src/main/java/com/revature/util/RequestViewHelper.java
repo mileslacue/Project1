@@ -6,9 +6,7 @@ public class RequestViewHelper {
 
 	
 public static String process(HttpServletRequest request) {
-	
 		System.out.println(request.getRequestURI());
-		System.out.println("testing");
 		switch(request.getRequestURI()) {
 		
 		case "/ERS/login.view":
@@ -18,7 +16,7 @@ public static String process(HttpServletRequest request) {
 			return "partials/reimbursement.html";
 			
 		case "/ERS/create.view":
-			return "partials/createReimbursement.html";
+			return "partials/create.html";
 			
 		default:
 			return null;

@@ -18,6 +18,7 @@ public class LoadViewServlet extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		System.out.println(request.getRequestURI());
 		System.out.println("Request sent to front controller, LoadViewServlet.doGet()");
 
 		String nextView = RequestViewHelper.process(request);

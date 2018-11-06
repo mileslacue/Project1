@@ -239,14 +239,14 @@ function getInitialRecords(t) {
 
 function loadCreateReimb() {
 	// console.log to tell that we are entering this function
-	console.log('Sucessfully inside of loadReimb()');
+	console.log('Sucessfully inside of loadcreateReimb()');
 
 	// create new Http Request
 	let xhr = new XMLHttpRequest();
 
 	// Open the request using a Get method, get the view called login.view and
 	// do this asynchronously
-	xhr.open('GET', 'create.view', true);
+	xhr.open('GET','create.view',true);
 
 	// send the request
 	xhr.send();
@@ -256,7 +256,62 @@ function loadCreateReimb() {
 	xhr.onreadystatechange = function() {
 		if (xhr.readyState == 4 && xhr.status == 200) {
 			document.getElementById('view').innerHTML = xhr.responseText;
-			
+			createReimbFunctionality();
 		}
 	}
 }
+
+function createReimbFunctionality(){
+
+    $("#add").click(createReimbFunctionality2);
+}
+
+function createReimbFunctionality2(){
+
+    //capture the inputs from the fields   
+	var date = $("#date").val();
+    var description = $("#description").val();
+	var amount = $("#amount").val();
+    temp = $("#type").val();
+    var type; 
+    switch(temp){
+        case "Lodging":
+            type = 1 
+                break;
+        case "Travel":
+            type = 2;
+                break;
+        case "Food": 
+            type = 3;
+                break;
+        case "Other":
+            type = 4
+                break;
+        };
+	
+	//create JSON record to be sent to Servlet
+    var  newRecord = [amount, currentUser.employeeID , type, description];
+	var newRecordJSON = JSON.stringify(newRecord);
+    console.log(newRecordJSON);
+    
+    //Initiate the XHR call to the servlet
+ 
+	var xhr = new XMLHttpRequest();
+
+	// open the xhr request, POST method, declare the route||path and set the
+	// asynchronous boolean to true
+	xhr.open('PUT', 'reimburse', true);
+
+	// // send the credentials in the XHR request and wait for a response.
+	xhr.send(newRecordJSON);
+
+	xhr.onreadystatechange = function() {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+            alert("Thank you for your request, please await a response");
+            //call to load the reimbursement view page
+            loadReimb();
+        }
+
+    }
+
+};

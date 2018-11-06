@@ -24,7 +24,7 @@ public class ReimbursementDAOImpl implements ReimbursementDAO {
 			
 					
 		//prepared statement -> create the SQL INSERT statement to insert a new record into the table
-		String sql = "INSERT INTO REIMBURSEMENT (ReImb_Amount, ReImb_Author, ReImb_Type_ID,  ReImb_Description ) VALUES (?,?,?,?)";
+		String sql = "INSERT INTO REIMBURSEMENT (Reimb_Amount, Reimb_Author, Reimb_Type_ID,  Reimb_Description ) VALUES (?,?,?,?)";
 		
 		//prepare the SQL call
 		PreparedStatement pstmt = conn.prepareStatement(sql);
@@ -210,7 +210,7 @@ public class ReimbursementDAOImpl implements ReimbursementDAO {
 
 			// prepared statement -> create the SQL INSERT statement to insert a new record
 			// into the table
-			String sql = "SELECT * FROM REIMBURSEMENT WHERE (REIMB_STATUS_ID = 3 AND AND REIMB = ?)";
+			String sql = "SELECT * FROM REIMBURSEMENT WHERE (REIMB_STATUS_ID = 3 AND AND REIMB_Author = ?)";
 
 			// prepare the SQL call
 			PreparedStatement pstmt = conn.prepareStatement(sql);
@@ -290,7 +290,7 @@ public class ReimbursementDAOImpl implements ReimbursementDAO {
 
 			// prepared statement -> create the SQL INSERT statement to insert a new record
 			// into the table
-			String sql = "SELECT * FROM REIMBURSEMENT WHERE (REIMB_STATUS_ID = 2 AND REIMB = ?)";
+			String sql = "SELECT * FROM REIMBURSEMENT WHERE (REIMB_STATUS_ID = 2 AND REIMB_ID = ?)";
 
 			// prepare the SQL call
 			PreparedStatement pstmt = conn.prepareStatement(sql);
@@ -330,7 +330,7 @@ public class ReimbursementDAOImpl implements ReimbursementDAO {
 		try (Connection conn = ConnectionFactory.getInstance().getConnection();) {
 
 			//Construct & execute the corresponding SELECT statement
-			String sql = "SELECT * FROM REIMBURSEMENT WHERE ReImb_Status_ID = 1";
+			String sql = "SELECT * FROM REIMBURSEMENT WHERE Reimb_Status_ID = 1";
 			Statement stmt = conn.createStatement();
 			ResultSet rs = stmt.executeQuery(sql);   
 		
@@ -366,14 +366,14 @@ public class ReimbursementDAOImpl implements ReimbursementDAO {
 	public List<Reimbursement> empGetPending(int userID) {
 		// create a new object ()
 				List<Reimbursement> reimbursements = new ArrayList<Reimbursement>();
-				System.out.println("Spinning up the method to get all declined reimbursements");
+				System.out.println("Spinning up the method to get all pending reimbursements");
 
 				// establish a connection to the database (auto commit:off)
 				try (Connection conn = ConnectionFactory.getInstance().getConnection();) {
 
 					// prepared statement -> create the SQL INSERT statement to insert a new record
 					// into the table
-					String sql = "SELECT * FROM REIMBURSEMENT WHERE (REIMB_STATUS_ID = 1 AND REIMB = ?)";
+					String sql = "SELECT * FROM REIMBURSEMENT WHERE (REIMB_STATUS_ID = 1 AND REIMB_Author = ?)";
 
 					// prepare the SQL call
 					PreparedStatement pstmt = conn.prepareStatement(sql);
@@ -410,7 +410,7 @@ public class ReimbursementDAOImpl implements ReimbursementDAO {
 		try (Connection conn = ConnectionFactory.getInstance().getConnection();) {
 
 			// Construct & execute the corresponding SELECT statement
-			String sql = "SELECT * FROM REIMBURSEMENT WHERE REIMB_ID = ?";
+			String sql = "SELECT * FROM REIMBURSEMENT WHERE REIMB_Author = ?";
 
 			// prepare the SQL call
 			PreparedStatement pstmt = conn.prepareStatement(sql);
