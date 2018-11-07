@@ -10,21 +10,27 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.revature.models.Employee;
 import com.revature.services.EmployeeServices;
+import com.revature.util.RequestViewHelper;
 
 
 @WebServlet("/login")
 public class LoginServlet extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;
-
+	Logger log = LogManager.getLogger(LoginServlet.class);
+	
 	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		
-		System.out.println("Request sent to LoginServlet.doPost()");
+		log.info("Request sent to LoginServlet.doPost()");
+	
 		//create a new Services object from the Employee Services
 		EmployeeServices userService = new EmployeeServices();
 		

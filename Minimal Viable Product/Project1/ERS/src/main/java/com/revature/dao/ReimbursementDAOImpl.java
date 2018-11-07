@@ -9,14 +9,21 @@ import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import com.revature.models.Employee;
 import com.revature.models.Reimbursement;
+import com.revature.services.EmployeeServices;
 import com.revature.util.ConnectionFactory;
 
 public class ReimbursementDAOImpl implements ReimbursementDAO {
-
+	
+	Logger log = LogManager.getLogger(ReimbursementDAOImpl.class);
+	
 	@Override
 	public void createReimbursement(double amount, String description, int type, int author ) {
+		log.info("Spinning up the method to create a reimbursement record");
 			
 		//establish a connection to the database (auto commit:off)
 		try(Connection conn = ConnectionFactory.getInstance().getConnection();){
@@ -42,7 +49,7 @@ public class ReimbursementDAOImpl implements ReimbursementDAO {
 		//commit changes	
 		conn.commit();
 		}catch(SQLException sql) {
-			System.out.println("Create function");
+			log.error("Inside Create function");
 			sql.printStackTrace();
 		}
 
@@ -51,6 +58,7 @@ public class ReimbursementDAOImpl implements ReimbursementDAO {
 
 	@Override
 	public void updateReimbursement(int id, int status, int resolverID) {
+		log.info("Spinning up the method to update a reimbursement record");
 		//Financial manager will be able to update the reimbursement table status column
 		
 		try (Connection conn = ConnectionFactory.getInstance().getConnection();) {
@@ -73,7 +81,7 @@ public class ReimbursementDAOImpl implements ReimbursementDAO {
 			//commit changes
 			conn.commit();
 		} catch (SQLException sql) {
-			System.out.println("update function");
+			log.error("Inside Update Function");
 			sql.printStackTrace();
 		}
 	}
@@ -81,7 +89,7 @@ public class ReimbursementDAOImpl implements ReimbursementDAO {
 
 	@Override
 	public List<Reimbursement> mngGetAll() {
-		
+		log.info("Spinning up the method to get all reimbursements(mng)");
 		List<Reimbursement> records = new ArrayList<>();
 		
 		try (Connection conn = ConnectionFactory.getInstance().getConnection();) {
@@ -111,7 +119,7 @@ public class ReimbursementDAOImpl implements ReimbursementDAO {
 			}
 
 		} catch (SQLException sql) {
-			System.out.println("mngGetAll function");
+			log.error("Inside mngGetAll function");
 			sql.printStackTrace();
 		}
 		return records;
@@ -120,6 +128,7 @@ public class ReimbursementDAOImpl implements ReimbursementDAO {
 
 	@Override
 	public List<Reimbursement> empGetAll(int userID) {
+		log.info("Spinning up the method to get all reimbursements(emp)");
 		
 		List<Reimbursement> reimbursements = new ArrayList<Reimbursement>();
 		//System.out.println("Spinning up the method to get all reimbursements");
@@ -137,7 +146,6 @@ public class ReimbursementDAOImpl implements ReimbursementDAO {
 
 			// execute the query
 			ResultSet rs = pstmt.executeQuery();
-			System.out.println("All Reimbursements Gathered");
 			while (rs.next()) {
 				Reimbursement r = new Reimbursement();
 
@@ -154,6 +162,7 @@ public class ReimbursementDAOImpl implements ReimbursementDAO {
 			}
 
 		} catch (SQLException sql) {
+			log.error("Inside empGetAll Function ");
 			sql.printStackTrace();
 		}
 
@@ -164,6 +173,7 @@ public class ReimbursementDAOImpl implements ReimbursementDAO {
 	@Override
 	public List<Reimbursement> mngGetApproved() {
 		
+		log.info("Spinning up the method to get all Approved reimbursements(mng)");
 		List<Reimbursement> records = new ArrayList<>();
 		
 		try (Connection conn = ConnectionFactory.getInstance().getConnection();) {
@@ -193,7 +203,7 @@ public class ReimbursementDAOImpl implements ReimbursementDAO {
 			}
 
 		} catch (SQLException sql) {
-			System.out.println("mngGetAccept function");
+			log.error("Inside mngGetApproved Function");
 			sql.printStackTrace();
 		}
 		return records;
@@ -204,7 +214,7 @@ public class ReimbursementDAOImpl implements ReimbursementDAO {
 	public List<Reimbursement> empGetApproved(int userID) {
 		// create a new object ()
 		List<Reimbursement> reimbursements = new ArrayList<Reimbursement>();
-		System.out.println("Spinning up the method to get all Approved reimbursements");
+		log.info("Spinning up the method to get all Approveed reimbursements(emp)");
 
 		// establish a connection to the database (auto commit:off)
 		try (Connection conn = ConnectionFactory.getInstance().getConnection();) {
@@ -219,7 +229,6 @@ public class ReimbursementDAOImpl implements ReimbursementDAO {
 
 			// execute the query
 			ResultSet rs = pstmt.executeQuery();
-			System.out.println("All Accepted Reimbursements Gathered");
 			while (rs.next()) {
 				Reimbursement r = new Reimbursement();
 
@@ -236,6 +245,7 @@ public class ReimbursementDAOImpl implements ReimbursementDAO {
 			}
 
 		} catch (SQLException sql) {
+			log.error("Inside empGetApproved Function");
 			sql.printStackTrace();
 		}
 
@@ -245,6 +255,8 @@ public class ReimbursementDAOImpl implements ReimbursementDAO {
 	
 	@Override
 	public List<Reimbursement> mngGetDeclined() {
+		log.info("Spinning up the method to get all declined reimbursements(mng)");
+		
 		List<Reimbursement> records = new ArrayList<>();
 		
 		try (Connection conn = ConnectionFactory.getInstance().getConnection();) {
@@ -274,7 +286,7 @@ public class ReimbursementDAOImpl implements ReimbursementDAO {
 			}
 
 		} catch (SQLException sql) {
-			System.out.println("mngGetDecline function");
+			log.error("Inside mngGetDeclined Function");
 			sql.printStackTrace();
 		}
 		return records;
@@ -284,7 +296,7 @@ public class ReimbursementDAOImpl implements ReimbursementDAO {
  	public List<Reimbursement> empGetDeclined(int userID) {
 		// create a new object ()
 		List<Reimbursement> reimbursements = new ArrayList<Reimbursement>();
-		System.out.println("Spinning up the method to get all declined reimbursements");
+		log.info("Spinning up the method to get all Declined Reimbursements(emp)");
 
 		// establish a connection to the database (auto commit:off)
 		try (Connection conn = ConnectionFactory.getInstance().getConnection();) {
@@ -299,7 +311,6 @@ public class ReimbursementDAOImpl implements ReimbursementDAO {
 
 			// execute the query
 			ResultSet rs = pstmt.executeQuery();
-			System.out.println("All Declined Reimbursements Gathered");
 			while (rs.next()) {
 				Reimbursement r = new Reimbursement();
 
@@ -316,6 +327,7 @@ public class ReimbursementDAOImpl implements ReimbursementDAO {
 			}
 
 		} catch (SQLException sql) {
+			log.error("Inside empGetDeclined Function");
 			sql.printStackTrace();
 		}
 
@@ -324,6 +336,7 @@ public class ReimbursementDAOImpl implements ReimbursementDAO {
 	
 	@Override
 	public List<Reimbursement> mngGetPending() {
+		log.info("Spinning up the method to get all Pending reimbursements(mng)");
 
 	
 		List<Reimbursement> records = new ArrayList<>();
@@ -355,7 +368,7 @@ public class ReimbursementDAOImpl implements ReimbursementDAO {
 			}
 
 		} catch (SQLException sql) {
-			System.out.println("mngGetAll function");
+			log.error("Inside mngGetPending Function");
 			sql.printStackTrace();
 		}
 		return records;
@@ -367,7 +380,8 @@ public class ReimbursementDAOImpl implements ReimbursementDAO {
 	public List<Reimbursement> empGetPending(int userID) {
 		// create a new object ()
 				List<Reimbursement> reimbursements = new ArrayList<Reimbursement>();
-				System.out.println("Spinning up the method to get all Pending reimbursements");
+				log.info("Spinning up the method to get all Pending reimbursements(emp)");
+				
 
 				// establish a connection to the database (auto commit:off)
 				try (Connection conn = ConnectionFactory.getInstance().getConnection();) {
@@ -382,7 +396,6 @@ public class ReimbursementDAOImpl implements ReimbursementDAO {
 
 					// execute the query
 					ResultSet rs = pstmt.executeQuery();
-					System.out.println("All Pending Reimbursements Gathered");
 					while (rs.next()) {
 						Reimbursement r = new Reimbursement();
 
@@ -399,6 +412,7 @@ public class ReimbursementDAOImpl implements ReimbursementDAO {
 					}
 
 				} catch (SQLException sql) {
+					log.error("Inside empGetPending Function");
 					sql.printStackTrace();
 				}
 
@@ -407,6 +421,7 @@ public class ReimbursementDAOImpl implements ReimbursementDAO {
 
 	@Override
 	public boolean checkSingleRecord(int id) {
+		log.info("Checking the existance of desired record...");
 		// check to see if their exists a record that corresponds with the inputed ID
 		try (Connection conn = ConnectionFactory.getInstance().getConnection();) {
 
@@ -427,13 +442,14 @@ public class ReimbursementDAOImpl implements ReimbursementDAO {
 				++count;
 			}
 			if (count == 1) {
-				System.out.println("Reimbursement record exists");
+				log.info("Reimbursement Record Exists");
 				return true;
 			} else {
+				log.warn("Reimbursement Record Not Found");
 				return false;
 			}
 		} catch (SQLException sql) {
-			System.out.println("checkSingleRecord function");
+			log.error("Inside checkSingleRecord function");
 			sql.printStackTrace();
 		}
 		return false;

@@ -6,14 +6,18 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import com.revature.models.Employee;
 import com.revature.models.Reimbursement;
+import com.revature.servlets.ReimbursementServlet;
 import com.revature.util.ConnectionFactory;
 
 //Contain the implemented Data Access Methods {CRUD(Create.Read.Update.Delete) methods}
 public class EmployeeDAOImpl implements EmployeeDAO {
 
-	
+	Logger log = LogManager.getLogger(EmployeeDAOImpl.class);
 	
 	@Override
 	public Employee getEmployee(int id) {
@@ -47,7 +51,7 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 			} 
 				
 		 }catch (SQLException sql) {
-			System.out.println("getEmployee function");
+			 log.error("getEmployee function");
 			sql.printStackTrace();
 		}
 			
@@ -86,7 +90,7 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 			} 
 				
 		 }catch (SQLException sql) {
-			System.out.println("getEmployee function");
+			 log.error("getEmployee by userN/pass function");	
 			sql.printStackTrace();
 		}
 			
@@ -119,13 +123,13 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 			    ++count;
 			}
 			if (count == 1) {
-			    System.out.println("Username exists");
+				log.info("Username Exists");
 			    return true;
 			}else {
 				return false;
 			}				
 		 }catch (SQLException sql) {
-			System.out.println("getEmployee function");
+			 log.error("checkEmployee function");
 			sql.printStackTrace();
 		}
 			

@@ -7,21 +7,25 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import com.revature.util.RequestViewHelper;
 
 public class LoadViewServlet extends HttpServlet{
 
 	private static final long serialVersionUID = 1L;
+	Logger log = LogManager.getLogger(LoadViewServlet.class);
 
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		System.out.println("Request sent to front controller, LoadViewServlet.doGet()");
+		log.info("Request sent to front controller, LoadViewServlet.doGet()");
 
 		String nextView = RequestViewHelper.process(request);
-		System.out.println("In LoadView Servlet: outgoing String: "+nextView);
 
-		// we will come back to this...
+		log.info("In LoadView Servlet: outgoing String: "+nextView);
+	
 		request.getRequestDispatcher(nextView).forward(request, response);
 
 }

@@ -8,6 +8,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.revature.models.Employee;
 import com.revature.services.EmployeeServices;
@@ -17,12 +20,13 @@ import com.revature.services.ReimbursementService;
 public class UpdateReimbursementServlet extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;
-
+	Logger log = LogManager.getLogger(UpdateReimbursementServlet.class);
 	//updating of reimbursement records(manager exclusive)
 	@Override
 	protected void doPut(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
 		
-		System.out.println("doPut() in updateReimbursement servlet");
+		log.info("Request sent to UpdateReimbursementServlet, doPost()");
+		
 		// create appropriate service objects
 		ReimbursementService reimburseService = new ReimbursementService();
 		EmployeeServices employeeService = new EmployeeServices();

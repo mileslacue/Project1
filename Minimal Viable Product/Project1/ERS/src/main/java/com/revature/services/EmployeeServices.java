@@ -1,13 +1,19 @@
 package com.revature.services;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import com.revature.dao.EmployeeDAOImpl;
 import com.revature.models.Employee;
+import com.revature.util.RequestViewHelper;
 
 //Service class to access the DAO methods 
 public class EmployeeServices {
 
+	
 	private EmployeeDAOImpl empDAO = new EmployeeDAOImpl();
-
+	Logger log = LogManager.getLogger(EmployeeServices.class);
+	
 	public Employee getEmployee(int Id) {
 		return empDAO.getEmployee(Id);
 	}
@@ -19,7 +25,7 @@ public class EmployeeServices {
 		if (validCredentials(username, password)) {
 			return empDAO.getEmployee(username, password);
 		} else {
-			System.out.println("Invalid Credential, user not found.");
+			log.warn("Invalid Credentials, user not found.");
 			return null;
 		}
 	}

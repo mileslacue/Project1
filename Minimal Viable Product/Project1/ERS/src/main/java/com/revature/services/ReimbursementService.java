@@ -3,15 +3,21 @@ package com.revature.services;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.revature.dao.ReimbursementDAO;
 import com.revature.dao.ReimbursementDAOImpl;
 import com.revature.models.Employee;
 import com.revature.models.Reimbursement;
+import com.revature.servlets.LoadViewServlet;
 
 //Service class to access the DAO methods 
 public class ReimbursementService {
 
+	Logger log = LogManager.getLogger(ReimbursementService.class);
+	
 	private ReimbursementDAO reimbDAO = new ReimbursementDAOImpl();
 
 	
@@ -25,9 +31,9 @@ public class ReimbursementService {
 		//Condition: User must be a manager; record must exist
 		if((mng.getUserRoleID() == 2) && (reimbDAO.checkSingleRecord(reimbID))){		
 			reimbDAO.updateReimbursement(reimbID, status, mng.getEmployeeID());
-			System.out.println("Update Successfull");
+			log.info("Update Successfull");
 		}else {
-			System.out.println("Update Unsuccessful");
+			log.info("Update Unsuccessful");
 		}
 	}
 	

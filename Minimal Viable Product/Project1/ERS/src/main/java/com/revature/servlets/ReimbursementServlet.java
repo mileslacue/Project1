@@ -11,6 +11,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.revature.models.Employee;
 import com.revature.models.Reimbursement;
@@ -21,12 +24,13 @@ import com.revature.services.ReimbursementService;
 public class ReimbursementServlet extends HttpServlet{
 
 	private static final long serialVersionUID = 1L;
-	
+	Logger log = LogManager.getLogger(ReimbursementServlet.class);
 	
 	//viewing of reimbursement records.
 	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
 		
+		log.info("Request sent to ReimbursementServlet, doPost()");
 		//create the appropriate service objects
 		ReimbursementService reimburseService = new ReimbursementService();
 		EmployeeServices employeeService = new EmployeeServices();
@@ -88,6 +92,7 @@ public class ReimbursementServlet extends HttpServlet{
 	@Override
 	protected void doPut(HttpServletRequest request, HttpServletResponse resposnse) throws ServletException, IOException{
 
+		log.info("Request sent to ReimbursementServlet, doPut()");
 		// create appropriate service objects
 		ReimbursementService reimburseService = new ReimbursementService();
 		EmployeeServices employeeService = new EmployeeServices();
