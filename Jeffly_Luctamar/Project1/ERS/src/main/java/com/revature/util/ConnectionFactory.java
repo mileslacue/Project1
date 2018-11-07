@@ -34,7 +34,7 @@ public class ConnectionFactory {
 			
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 			// Load the properties file keys/values into the Properties object
-			prop.load(new FileReader("C:/Users/miles/Project1/Jeffly_Luctamar/Project1/ERS/src/main/resources/Application.Properties"));
+			prop.load(new FileReader(("C:/Users/Luctamar/git Repository/Project1/Jeffly_Luctamar/Project1/ERS/src/main/resources/Application.Properties")));
 			
 			// Get a connection from the DriverManager
 			conn = DriverManager.getConnection(
